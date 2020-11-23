@@ -7,3 +7,19 @@
   color: var(--g100);
 }
 
+.bg-fond-alternatif {
+  background-color: var(--g100);
+}
+
+.text-orange-soft {
+  color: var(--os500);
+}
+
+.text-blue-soft {
+  color: var(--bs500);
+}
+
+.text-green-soft {
+  color: var(--gm500);
+}
+
