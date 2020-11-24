@@ -2,7 +2,8 @@
   text-align: center;
 }
 
-.rf-bg--alt, .rf-bg--alt h3 {
+.rf-bg--alt,
+.rf-bg--alt h3 {
   background-color: var(--bf500);
   color: var(--g100);
 }
@@ -11,8 +12,20 @@
   background-color: var(--g100);
 }
 
+.bg-blue-france {
+  background-color: var(--bf500);
+}
+
+.bg-blue-soft {
+  background-color: var(--bs300);
+}
+
 .text-orange-soft {
   color: var(--os500);
+}
+
+.text-white {
+  color: var(--w);
 }
 
 .text-blue-soft {
@@ -22,4 +35,3 @@
 .text-green-soft {
   color: var(--gm500);
 }
-
