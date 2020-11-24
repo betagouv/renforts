@@ -26,6 +26,12 @@ app.get('/', (req, res) => {
   res.render('landing')
 })
 
+app.get('/mission-cpam', (req, res) => {
+  res.render('mission-CPAM', {
+    withApplyButton: true,
+  })
+})
+
 module.exports = app.listen(port, () => {
   console.log(`${appName} listening at http://localhost:${port}`)
 })
