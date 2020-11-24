@@ -45,10 +45,11 @@
             <ul class="rf-shortcuts__list">
               <% if (locals.withApplyButton) { %>
                 <li class="rf-shortcuts__item">
-                  <a title="Postuler"
-                     href="#"
-                     class="rf-btn"
-                  >
+                  <a class="rf-btn"
+                     title="Postuler"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     href="mailto:<%= mailtoLink %>">
                     Postuler
                   </a>
                 </li>
