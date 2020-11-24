@@ -5,6 +5,8 @@ const appName = "Renforts.fonction-publique.gouv.fr"
 const appDescription = 'Mise à disposition d\'agents pour aider au contact tracing Covid'
 const appRepo = 'https://github.com/betagouv/renforts'
 const port = process.env.PORT || 8080
+  // Todo use .env file
+const contactEmail = 'echanges-de-competences@beta.gouv.fr'
 
 const app = express()
 
@@ -19,6 +21,7 @@ app.use(function(req, res, next){
   res.locals.appName = appName
   res.locals.appDescription = appDescription
   res.locals.appRepo = appRepo
+  res.locals.contactEmail = contactEmail
   next()
 })
 
@@ -27,8 +30,23 @@ app.get('/', (req, res) => {
 })
 
 app.get('/mission-cpam', (req, res) => {
+  const missionTitle = 'Conseiller Contact Tracing'
+  const subject = `Je postule à la mission ${missionTitle}`
+  const body = `Bonjour,
+
+  Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire plus ?
+
+  [Des questions ? Vous voulez vous présenter ? Ecrivez ce que vous voulez !]
+
+  Bonne journée,
+
+  `
+  const mailtoLink = `${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
   res.render('mission-CPAM', {
     withApplyButton: true,
+    missionTitle: missionTitle,
+    mailtoLink : mailtoLink,
   })
 })
 
