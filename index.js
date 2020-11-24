@@ -1,23 +1,26 @@
-const express = require('express')
-const path = require('path')
+const express = require("express")
+const path = require("path")
+
+const { makeMailto } = require("./utils/mail")
 
 const appName = "Renforts.fonction-publique.gouv.fr"
-const appDescription = 'Mise à disposition d\'agents pour aider au contact tracing Covid'
-const appRepo = 'https://github.com/betagouv/renforts'
+const appDescription =
+  "Mise à disposition d'agents pour aider au contact tracing Covid"
+const appRepo = "https://github.com/betagouv/renforts"
 const port = process.env.PORT || 8080
-  // Todo use .env file
-const contactEmail = 'echanges-de-competences@beta.gouv.fr'
+// Todo use .env file
+const contactEmail = "echanges-de-competences@beta.gouv.fr"
 
 const app = express()
 
-app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, 'views'))
+app.set("view engine", "ejs")
+app.set("views", path.join(__dirname, "views"))
 
-app.use('/static', express.static('static'))
+app.use("/static", express.static("static"))
 // Hack for importing css from npm package
-app.use('/~', express.static(path.join(__dirname, 'node_modules')))
+app.use("/~", express.static(path.join(__dirname, "node_modules")))
 // Populate some variables for all views
-app.use(function(req, res, next){
+app.use(function (req, res, next) {
   res.locals.appName = appName
   res.locals.appDescription = appDescription
   res.locals.appRepo = appRepo
@@ -25,12 +28,14 @@ app.use(function(req, res, next){
   next()
 })
 
-app.get('/', (req, res) => {
-  res.render('landing')
+app.get("/", (req, res) => {
+  res.render("landing", {
+    makeMailto,
+  })
 })
 
-app.get('/mission-cpam', (req, res) => {
-  const missionTitle = 'Conseiller Contact Tracing'
+app.get("/mission-cpam", (req, res) => {
+  const missionTitle = "Conseiller Contact Tracing"
   const subject = `Je postule à la mission ${missionTitle}`
   const body = `Bonjour,
 
@@ -41,12 +46,13 @@ app.get('/mission-cpam', (req, res) => {
   Bonne journée,
 
   `
-  const mailtoLink = `${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  const mailtoLink = makeMailto(subject, body)
 
-  res.render('mission-CPAM', {
+  res.render("mission-CPAM", {
     withApplyButton: true,
-    missionTitle: missionTitle,
-    mailtoLink : mailtoLink,
+    missionTitle,
+    mailtoLink,
+    makeMailto,
   })
 })
 
