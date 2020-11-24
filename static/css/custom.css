@@ -28,6 +28,10 @@
   color: var(--w);
 }
 
+.text-blue-france {
+  color: var(--bf500);
+}
+
 .text-blue-soft {
   color: var(--bs500);
 }
