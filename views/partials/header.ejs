@@ -43,6 +43,17 @@
         <div class="rf-header__tools">
           <div class="rf-shortcuts">
             <ul class="rf-shortcuts__list">
+              <% if (locals.withApplyButton) { %>
+                <li class="rf-shortcuts__item">
+                  <a class="rf-btn"
+                     title="Postuler"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     href="<%= applyLink %>">
+                    Postuler
+                  </a>
+                </li>
+              <% } %>
               <li class="rf-shortcuts__item">
                 <div class="rf-checkbox-group">
                   <input type="checkbox" id="rf-dark-mode-toggle-switch" name="rf-dark-mode-toggle-switch" class="ng-untouched ng-pristine ng-valid">
