@@ -26,6 +26,12 @@ app.get('/', (req, res) => {
   res.render('landing')
 })
 
+app.get('/mentions-legales', (req, res) => {
+  res.render('legalNotice', {
+    contactEmail: 'echanges-de-competences@beta.gouv.fr', // todo reuse the contactEmail var everywhere
+  })
+})
+
 module.exports = app.listen(port, () => {
   console.log(`${appName} listening at http://localhost:${port}`)
 })
