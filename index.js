@@ -59,7 +59,7 @@ Bonne journée,
 
 app.get("/mentions-legales", (req, res) => {
   res.render("legalNotice", {
-    contactEmail: "echanges-de-competences@beta.gouv.fr", // todo reuse the contactEmail var everywhere
+    contactEmail,
     makeMailto,
   })
 })
