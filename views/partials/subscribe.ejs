@@ -7,25 +7,28 @@
             style="
               display: flex;
               justify-content: space-between;
-              align-items: baseline;
+              align-items: center;
             "
           >
-            <span class="rf-my-2w">
-              Contactez-nous sur
-              <span class="rf-text--lg rf-mx-1v">
-                <b><%= contactEmail %></b>
-              </span>
-              pour en savoir plus.
-            </span>
-            <a
-              title="Contactez-nous"
-              href="<%= makeMailto('Bonjour !') %>"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="rf-btn"
-            >
-              Contact
-            </a>
+            <div class="rf-my-2w">
+              <div>
+                Contactez-nous sur
+                <span class="rf-text--lg rf-mx-1v">
+                  <b><%= contactEmail %></b>
+                </span>
+              </div>
+            </div>
+            <div class="rf-mb-2w">
+              <a
+                title="Contactez-nous"
+                href="<%= makeMailto('Bonjour !') %>"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rf-btn"
+              >
+                Contact
+              </a>
+            </div>
           </div>
         </div>
       </div>
