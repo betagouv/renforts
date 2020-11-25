@@ -39,19 +39,18 @@ app.get("/mission-cpam", (req, res) => {
   const subject = `Je postule à la mission ${missionTitle}`
   const body = `Bonjour,
 
-  Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire plus ?
+Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire plus ?
 
-  [Des questions ? Vous voulez vous présenter ? Ecrivez ce que vous voulez !]
+[Des questions ? Vous voulez vous présenter ? Ecrivez ce que vous voulez !]
 
-  Bonne journée,
-
-  `
-  const mailtoLink = makeMailto(subject, body)
+Bonne journée,
+`
+  const applyLink = makeMailto(subject, body)
 
   res.render("mission-CPAM", {
     withApplyButton: true,
     missionTitle,
-    mailtoLink,
+    applyLink,
     makeMailto,
   })
 })
