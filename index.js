@@ -1,6 +1,8 @@
 const express = require("express")
 const path = require("path")
 
+require("dotenv").config()
+
 const { makeMailto } = require("./utils/mail")
 
 const appName = "Renforts.fonction-publique.gouv.fr"
@@ -55,9 +57,9 @@ Bonne journée,
   })
 })
 
-app.get('/mentions-legales', (req, res) => {
-  res.render('legalNotice', {
-    contactEmail: 'echanges-de-competences@beta.gouv.fr', // todo reuse the contactEmail var everywhere
+app.get("/mentions-legales", (req, res) => {
+  res.render("legalNotice", {
+    contactEmail: "echanges-de-competences@beta.gouv.fr", // todo reuse the contactEmail var everywhere
   })
 })
 
