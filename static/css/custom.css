@@ -8,6 +8,8 @@
   color: var(--g100);
 }
 
+/* Couleurs */
+
 .bg-fond-alternatif {
   background-color: var(--g100);
 }
@@ -38,4 +40,27 @@
 
 .text-green-soft {
   color: var(--gm500);
+}
+
+/* else */
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    5px 4px 6px -2px rgba(0, 0, 0, 0.05), -5px -4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rf-card__img.missions::before {
+  padding-bottom: 44%;
+}
+
+.zoomable {
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoomable:hover {
+  transform: scale(1.05);
 }
