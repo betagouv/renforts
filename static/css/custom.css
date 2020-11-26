@@ -65,3 +65,8 @@
 .zoomable:hover {
   transform: scale(1.05);
 }
+
+/* The card image respects the rounded corners */
+.rf-card.rounded-lg {
+  overflow: hidden;
+}
