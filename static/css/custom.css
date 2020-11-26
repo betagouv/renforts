@@ -53,6 +53,7 @@
   border-radius: 0.5rem;
 }
 
+/* Hack css : the padding is proportional to element width and so responsive */
 .rf-card__img.missions::before {
   padding-bottom: 44%;
 }
