@@ -5,10 +5,10 @@ require("dotenv").config()
 
 const { contactEmail, makeMailto } = require("./utils/mail")
 
-const appName = "Volontaires.fonction-publique.gouv.fr"
+const appName = "volontaires.fonction-publique.gouv.fr"
 
 const appDescription =
-  "Mise à disposition d'agents pour aider au contact tracing Covid"
+  "Mise à disposition d'agents publics pour renforcer des équipes en cas de crise"
 const appRepo = "https://github.com/betagouv/renforts"
 const port = process.env.PORT || 8080
 
