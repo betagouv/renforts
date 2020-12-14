@@ -8,7 +8,7 @@ const { contactEmail, makeMailto } = require("./utils/mail")
 const appName = "volontaires.fonction-publique.gouv.fr"
 
 const appDescription =
-  "Mise à disposition d'agents publics pour renforcer des équipes en cas de crise"
+  "Mise à disposition d'agents publics pour renforcer des équipes pendant la crise sanitaire"
 const appRepo = "https://github.com/betagouv/renforts"
 const port = process.env.PORT || 8080
 
