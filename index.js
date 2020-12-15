@@ -57,7 +57,7 @@ Bonne journée,
 })
 
 app.get("/mission-CNAV", (req, res) => {
-  const missionTitle = "Lorem ipsum dolor"
+  const missionTitle = "Conseiller maintien du lien social"
   const subject = `Je postule à la mission ${missionTitle}`
   const body = `Bonjour,
 
