@@ -56,6 +56,27 @@ Bonne journée,
   })
 })
 
+app.get("/mission-CNAV", (req, res) => {
+  const missionTitle = "Lorem ipsum dolor"
+  const subject = `Je postule à la mission ${missionTitle}`
+  const body = `Bonjour,
+
+Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire plus ?
+
+[Des questions ? Vous voulez vous présenter ? Ecrivez ce que vous voulez !]
+
+Bonne journée,
+`
+  const applyLink = makeMailto(subject, body)
+
+  res.render("mission-CNAV", {
+    withApplyButton: true,
+    missionTitle,
+    applyLink,
+    makeMailto,
+  })
+})
+
 app.get("/mentions-legales", (req, res) => {
   res.render("legalNotice", {
     makeMailto,
