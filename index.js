@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/mission-cpam", (req, res) => {
-  const missionTitle = "Conseiller suivi des cas contact"
+  const missionTitle = "Conseiller contact tracing"
   const subject = `Je postule à la mission ${missionTitle}`
   const body = `Bonjour,
 
