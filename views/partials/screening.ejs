@@ -1,4 +1,4 @@
-<div id="screening" class="rf-container">
+<div class="rf-container">
   <div class="rf-grid-row">
     <div class="rf-col">
       <form>
@@ -28,10 +28,30 @@
           </div>
         </fieldset>
         <div class="screening-final d-none" id="screening-final-ok">
-          C'est bon postulez!
+          <div>C'est bon postulez!</div>
+          <a
+            id="apply-button"
+            title="Commencer ma candidature"
+            href="<%= applyLink %>"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rf-btn"
+          >
+            Commencer ma candidature
+          </a>
         </div>
         <div class="screening-final d-none" id="screening-final-not-ok">
-          C'est pas bon. Postulez plutot à jeveuxaider.fr
+          <div>C'est pas bon. Postulez plutot à jeveuxaider.gouv.fr</div>
+          <a
+            id="apply-button"
+            title="Commencer ma candidature"
+            href="https://www.jeveuxaider.gouv.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rf-btn"
+          >
+            Aller vois jeveuxaider.gouv.fr
+          </a>
         </div>
       </form>
     </div>
