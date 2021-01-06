@@ -9,18 +9,18 @@
               class="form-check-input"
               type="radio"
               name="publicSectorRadio"
-              id="oui"
+              id="yes"
             />
-            <label class="form-check-label" for="oui"> Oui </label>
+            <label class="form-check-label" for="yes"> Oui </label>
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
               name="publicSectorRadio"
-              id="non"
+              id="no"
             />
-            <label class="form-check-label" for="non"> Non </label>
+            <label class="form-check-label" for="no"> Non </label>
           </div>
         </fieldset>
         <div class="screening-section d-none" id="screening-final-ok">
@@ -65,7 +65,7 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
-    document.getElementById("oui").addEventListener(
+    document.getElementById("yes").addEventListener(
       "click",
       function () {
         document.getElementById("screening-final-ok").classList.remove("d-none")
@@ -76,7 +76,7 @@
       false,
     )
 
-    document.getElementById("non").addEventListener(
+    document.getElementById("no").addEventListener(
       "click",
       function () {
         document
