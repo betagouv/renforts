@@ -64,15 +64,27 @@
 </div>
 
 <script>
-  $(document).ready(function () {
-    $("#oui").click(function () {
-      $("#screening-final-ok").removeClass("d-none")
-      $("#screening-final-not-ok").addClass("d-none")
-    })
+  document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById("oui").addEventListener(
+      "click",
+      function () {
+        document.getElementById("screening-final-ok").classList.remove("d-none")
+        document
+          .getElementById("screening-final-not-ok")
+          .classList.add("d-none")
+      },
+      false,
+    )
 
-    $("#non").click(function () {
-      $("#screening-final-not-ok").removeClass("d-none")
-      $("#screening-final-ok").addClass("d-none")
-    })
+    document.getElementById("non").addEventListener(
+      "click",
+      function () {
+        document
+          .getElementById("screening-final-not-ok")
+          .classList.remove("d-none")
+        document.getElementById("screening-final-ok").classList.add("d-none")
+      },
+      false,
+    )
   })
 </script>

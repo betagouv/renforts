@@ -92,3 +92,7 @@ body:after {
   padding: 2rem;
   border: 1px solid white;
 }
+
+.d-none {
+  display: none;
+}
