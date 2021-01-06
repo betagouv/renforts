@@ -1,0 +1,53 @@
+<div id="screening" class="rf-container">
+  <div class="rf-grid-row">
+    <div class="rf-col">
+      <form>
+        <fieldset>
+          Etes-vous fonctionnaire ou en CDI dans la fonction publique ?
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="oui"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Oui
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="non"
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              Non
+            </label>
+          </div>
+        </fieldset>
+        <div class="screening-final d-none" id="screening-final-ok">
+          C'est bon postulez!
+        </div>
+        <div class="screening-final d-none" id="screening-final-not-ok">
+          C'est pas bon. Postulez plutot à jeveuxaider.fr
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $("#oui").click(function () {
+      $("#screening-final-ok").removeClass("d-none")
+      $("#screening-final-not-ok").addClass("d-none")
+    })
+
+    $("#non").click(function () {
+      $("#screening-final-not-ok").removeClass("d-none")
+      $("#screening-final-ok").addClass("d-none")
+    })
+  })
+</script>
