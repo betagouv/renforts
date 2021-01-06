@@ -3,12 +3,12 @@
     <div class="rf-col">
       <form>
         <fieldset class="screening-section">
-          Etes-vous fonctionnaire ou en CDI dans la fonction publique ?
+          <p>Travaillez vous dans la fonction publique ?</p>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
-              name="fonctionnaireRadio"
+              name="publicSectorRadio"
               id="oui"
             />
             <label class="form-check-label" for="oui"> Oui </label>
@@ -17,14 +17,17 @@
             <input
               class="form-check-input"
               type="radio"
-              name="fonctionnaireRadio"
+              name="publicSectorRadio"
               id="non"
             />
             <label class="form-check-label" for="non"> Non </label>
           </div>
         </fieldset>
         <div class="screening-section d-none" id="screening-final-ok">
-          <div>C'est bon postulez!</div>
+          <p>
+            Ça tombe bien! Notre dispositif ne s'adresse qu'aux personnes de la
+            fonction publique.
+          </p>
           <a
             title="Commencer ma candidature"
             href="<%= applyLink %>"
@@ -36,7 +39,15 @@
           </a>
         </div>
         <div class="screening-section d-none" id="screening-final-not-ok">
-          <div>C'est pas bon. Postulez plutot à jeveuxaider.gouv.fr</div>
+          <p>
+            Malheureusement, notre dispositif s'adresse uniquement aux personnes
+            de la fonction publique, donc vous ne pouvez pas vous porter
+            volontaire sur notre site...
+          </p>
+          <p>
+            Mais nous vous proposons d'aller voir jeveuxaider.gouv.fr qui
+            recrute aussi des volontaires pour la crise sanitaire.
+          </p>
           <a
             title="Commencer ma candidature"
             href="https://www.jeveuxaider.gouv.fr/"
