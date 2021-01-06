@@ -85,3 +85,10 @@ body:after {
 .rf-card.rounded-lg {
   overflow: hidden;
 }
+
+.screening-section {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  border: 1px solid white;
+}
