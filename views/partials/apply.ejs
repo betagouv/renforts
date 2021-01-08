@@ -18,11 +18,13 @@
 </div>
 
 <script>
+  // prettier-ignore
+  // (we add ; in this code for IE)
   document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("apply-button").addEventListener(
       "click",
       function () {
-        document.getElementById("screening").classList.remove("d-none")
+        document.getElementById("screening").classList.remove("d-none");
       },
       false,
     );

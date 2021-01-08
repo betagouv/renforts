@@ -64,14 +64,16 @@
 </div>
 
 <script>
+  // prettier-ignore
+  // (we add ; in this code for IE)
   document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("yes").addEventListener(
       "click",
       function () {
-        document.getElementById("screening-final-ok").classList.remove("d-none")
+        document.getElementById("screening-final-ok").classList.remove("d-none");
         document
           .getElementById("screening-final-not-ok")
-          .classList.add("d-none")
+          .classList.add("d-none");
       },
       false,
     );
@@ -81,8 +83,8 @@
       function () {
         document
           .getElementById("screening-final-not-ok")
-          .classList.remove("d-none")
-        document.getElementById("screening-final-ok").classList.add("d-none")
+          .classList.remove("d-none");
+        document.getElementById("screening-final-ok").classList.add("d-none");
       },
       false,
     );
