@@ -50,59 +50,68 @@
           </a>
         </div>
 
-        <fieldset class="screening-section d-none" id="temp-worker-section">
-          <p>Etes-vous fonctionnaire stagiaire, ou en CDD, ou prestataire ?</p>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="temp-worker-radio"
-              id="temp-worker-yes"
-            />
-            <label class="form-check-label" for="temp-worker-yes"> Oui </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="temp-worker-radio"
-              id="temp-worker-no"
-            />
-            <label class="form-check-label" for="temp-worker-no"> Non </label>
-          </div>
-        </fieldset>
+        <div id="temp-worker-subtree" class="d-none">
+          <fieldset class="screening-section" id="temp-worker-section">
+            <p>
+              Etes-vous fonctionnaire stagiaire, ou en CDD, ou prestataire ?
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="temp-worker-radio"
+                id="temp-worker-yes"
+              />
+              <label class="form-check-label" for="temp-worker-yes">
+                Oui
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="temp-worker-radio"
+                id="temp-worker-no"
+              />
+              <label class="form-check-label" for="temp-worker-no"> Non </label>
+            </div>
+          </fieldset>
 
-        <div class="screening-section d-none" id="screening-final-temp-worker">
-          <p>
-            Malheureusement, notre dispositif s'adresse uniquement aux
-            fonctionnaires et aux personnes en CDI ...
-          </p>
-          <p>
-            Mais nous vous proposons d'aller voir jeveuxaider.gouv.fr qui
-            recrute aussi des volontaires pour la crise sanitaire.
-          </p>
-          <a
-            title="Aller voir jeveuxaider.gouv.fr"
-            href="https://www.jeveuxaider.gouv.fr/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="rf-btn"
+          <div
+            class="screening-section d-none"
+            id="screening-final-temp-worker"
           >
-            Aller voir jeveuxaider.gouv.fr
-          </a>
-        </div>
+            <p>
+              Malheureusement, notre dispositif s'adresse uniquement aux
+              fonctionnaires et aux personnes en CDI ...
+            </p>
+            <p>
+              Mais nous vous proposons d'aller voir jeveuxaider.gouv.fr qui
+              recrute aussi des volontaires pour la crise sanitaire.
+            </p>
+            <a
+              title="Aller voir jeveuxaider.gouv.fr"
+              href="https://www.jeveuxaider.gouv.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rf-btn"
+            >
+              Aller voir jeveuxaider.gouv.fr
+            </a>
+          </div>
 
-        <div class="screening-section d-none" id="screening-final-ok">
-          <p>Ça tombe bien! Nous recherchons des personnes comme vous !</p>
-          <a
-            title="Commencer ma candidature"
-            href="<%= applyLink %>"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="rf-btn"
-          >
-            Commencer ma candidature
-          </a>
+          <div class="screening-section d-none" id="screening-final-ok">
+            <p>Ça tombe bien! Nous recherchons des personnes comme vous !</p>
+            <a
+              title="Commencer ma candidature"
+              href="<%= applyLink %>"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rf-btn"
+            >
+              Commencer ma candidature
+            </a>
+          </div>
         </div>
       </form>
     </div>
@@ -112,16 +121,28 @@
 <script>
   // prettier-ignore
   // (we add ; in this code for IE)
+  var show = function (elementId) {
+    document
+      .getElementById(elementId)
+      .classList.remove("d-none");
+  };
+
+  // prettier-ignore
+  // (we add ; in this code for IE)
+  var hide = function (elementId) {
+    document
+      .getElementById(elementId)
+      .classList.add("d-none");
+  };
+
+  // prettier-ignore
+  // (we add ; in this code for IE)
   document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("public-sector-no").addEventListener(
       "click",
       function () {
-        document
-          .getElementById("screening-final-not-public-sector")
-          .classList.remove("d-none");
-        document.getElementById("temp-worker-section").classList.add("d-none");
-        document.getElementById("screening-final-temp-worker").classList.add("d-none");
-        document.getElementById("screening-final-ok").classList.add("d-none");
+        show("screening-final-not-public-sector");
+        hide("temp-worker-subtree");
       },
       false,
     );
@@ -129,10 +150,8 @@
     document.getElementById("public-sector-yes").addEventListener(
       "click",
       function () {
-        document.getElementById("temp-worker-section").classList.remove("d-none");
-        document
-          .getElementById("screening-final-not-public-sector")
-          .classList.add("d-none");
+        show("temp-worker-subtree");
+        hide("screening-final-not-public-sector");
       },
       false,
     );
@@ -140,8 +159,8 @@
     document.getElementById("temp-worker-yes").addEventListener(
       "click",
       function () {
-        document.getElementById("screening-final-temp-worker").classList.remove("d-none");
-        document.getElementById("screening-final-ok").classList.add("d-none");
+        show("screening-final-temp-worker");
+        hide("screening-final-ok");
       },
       false,
     );
@@ -149,8 +168,8 @@
     document.getElementById("temp-worker-no").addEventListener(
       "click",
       function () {
-        document.getElementById("screening-final-ok").classList.remove("d-none");
-        document.getElementById("screening-final-temp-worker").classList.add("d-none");
+        hide("screening-final-temp-worker");
+        show("screening-final-ok");
       },
       false,
     );
