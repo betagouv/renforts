@@ -83,6 +83,13 @@ app.get("/mentions-legales", (req, res) => {
   })
 })
 
+
+app.get("/faq", (req, res) => {
+  res.render("faq", {
+    makeMailto,
+  })
+})
+
 module.exports = app.listen(port, () => {
   console.log(`${appName} listening at http://localhost:${port}`)
 })
