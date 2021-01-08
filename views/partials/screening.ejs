@@ -119,6 +119,9 @@
         document
           .getElementById("screening-final-not-public-sector")
           .classList.remove("d-none");
+        document.getElementById("temp-worker-section").classList.add("d-none");
+        document.getElementById("screening-final-temp-worker").classList.add("d-none");
+        document.getElementById("screening-final-ok").classList.add("d-none");
       },
       false,
     );
@@ -127,6 +130,9 @@
       "click",
       function () {
         document.getElementById("temp-worker-section").classList.remove("d-none");
+        document
+          .getElementById("screening-final-not-public-sector")
+          .classList.add("d-none");
       },
       false,
     );
@@ -135,6 +141,7 @@
       "click",
       function () {
         document.getElementById("screening-final-temp-worker").classList.remove("d-none");
+        document.getElementById("screening-final-ok").classList.add("d-none");
       },
       false,
     );
@@ -143,6 +150,7 @@
       "click",
       function () {
         document.getElementById("screening-final-ok").classList.remove("d-none");
+        document.getElementById("screening-final-temp-worker").classList.add("d-none");
       },
       false,
     );
