@@ -5,17 +5,26 @@
         <p class="rf-callout__text">
           Si la mission vous convient, vous pouvez postuler!
         </p>
-        <a
-          title="Postuler"
-          href="<%= applyLink %>"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="rf-btn"
-        >
+        <button id="apply-button" title="Postuler" class="rf-btn">
           Postuler
-        </a>
+        </button>
       </div>
+      <div id="screening" class="d-none"><%- include('screening') -%></div>
       <p>Pour poser une question, contactez-nous à <%= contactEmail %></p>
     </div>
   </div>
 </div>
+
+<script>
+  // prettier-ignore
+  // (we add ; in this code for IE)
+  document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById("apply-button").addEventListener(
+      "click",
+      function () {
+        document.getElementById("screening").classList.remove("d-none");
+      },
+      false,
+    );
+  });
+</script>

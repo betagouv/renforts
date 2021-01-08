@@ -1,0 +1,92 @@
+<div class="rf-container">
+  <div class="rf-grid-row">
+    <div class="rf-col">
+      <form>
+        <fieldset class="screening-section">
+          <p>Travaillez vous dans la fonction publique ?</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="publicSectorRadio"
+              id="yes"
+            />
+            <label class="form-check-label" for="yes"> Oui </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="publicSectorRadio"
+              id="no"
+            />
+            <label class="form-check-label" for="no"> Non </label>
+          </div>
+        </fieldset>
+        <div class="screening-section d-none" id="screening-final-ok">
+          <p>
+            Ça tombe bien! Notre dispositif ne s'adresse qu'aux personnes de la
+            fonction publique.
+          </p>
+          <a
+            title="Commencer ma candidature"
+            href="<%= applyLink %>"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rf-btn"
+          >
+            Commencer ma candidature
+          </a>
+        </div>
+        <div class="screening-section d-none" id="screening-final-not-ok">
+          <p>
+            Malheureusement, notre dispositif s'adresse uniquement aux personnes
+            de la fonction publique, donc vous ne pouvez pas vous porter
+            volontaire sur notre site...
+          </p>
+          <p>
+            Mais nous vous proposons d'aller voir jeveuxaider.gouv.fr qui
+            recrute aussi des volontaires pour la crise sanitaire.
+          </p>
+          <a
+            title="Commencer ma candidature"
+            href="https://www.jeveuxaider.gouv.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rf-btn"
+          >
+            Aller voir jeveuxaider.gouv.fr
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  // prettier-ignore
+  // (we add ; in this code for IE)
+  document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById("yes").addEventListener(
+      "click",
+      function () {
+        document.getElementById("screening-final-ok").classList.remove("d-none");
+        document
+          .getElementById("screening-final-not-ok")
+          .classList.add("d-none");
+      },
+      false,
+    );
+
+    document.getElementById("no").addEventListener(
+      "click",
+      function () {
+        document
+          .getElementById("screening-final-not-ok")
+          .classList.remove("d-none");
+        document.getElementById("screening-final-ok").classList.add("d-none");
+      },
+      false,
+    );
+  });
+</script>
