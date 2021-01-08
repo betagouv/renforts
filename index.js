@@ -46,7 +46,9 @@ Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire
 
 Bonne journée,
 `
-  const applyLink = makeMailto(subject, body)
+  const applyLink = process.env.APPLY_URL_CPAM
+    ? process.env.APPLY_URL_CPAM
+    : makeMailto(subject, body)
 
   res.render("mission-CPAM", {
     withApplyButton: true,
