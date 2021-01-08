@@ -9,36 +9,27 @@
               class="form-check-input"
               type="radio"
               name="publicSectorRadio"
-              id="yes"
+              id="public-sector-yes"
             />
-            <label class="form-check-label" for="yes"> Oui </label>
+            <label class="form-check-label" for="public-sector-yes">
+              Oui
+            </label>
           </div>
           <div class="form-check">
             <input
               class="form-check-input"
               type="radio"
               name="publicSectorRadio"
-              id="no"
+              id="public-sector-no"
             />
-            <label class="form-check-label" for="no"> Non </label>
+            <label class="form-check-label" for="public-sector-no"> Non </label>
           </div>
         </fieldset>
-        <div class="screening-section d-none" id="screening-final-ok">
-          <p>
-            Ça tombe bien! Notre dispositif ne s'adresse qu'aux personnes de la
-            fonction publique.
-          </p>
-          <a
-            title="Commencer ma candidature"
-            href="<%= applyLink %>"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="rf-btn"
-          >
-            Commencer ma candidature
-          </a>
-        </div>
-        <div class="screening-section d-none" id="screening-final-not-ok">
+
+        <div
+          class="screening-section d-none"
+          id="screening-final-not-public-sector"
+        >
           <p>
             Malheureusement, notre dispositif s'adresse uniquement aux personnes
             de la fonction publique, donc vous ne pouvez pas vous porter
@@ -49,13 +40,68 @@
             recrute aussi des volontaires pour la crise sanitaire.
           </p>
           <a
-            title="Commencer ma candidature"
+            title="Aller voir jeveuxaider.gouv.fr"
             href="https://www.jeveuxaider.gouv.fr/"
             target="_blank"
             rel="noopener noreferrer"
             class="rf-btn"
           >
             Aller voir jeveuxaider.gouv.fr
+          </a>
+        </div>
+
+        <fieldset class="screening-section d-none" id="temp-worker-section">
+          <p>Etes-vous fonctionnaire stagiaire, ou en CDD, ou prestataire ?</p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="temp-worker-radio"
+              id="temp-worker-yes"
+            />
+            <label class="form-check-label" for="temp-worker-yes"> Oui </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="temp-worker-radio"
+              id="temp-worker-no"
+            />
+            <label class="form-check-label" for="temp-worker-no"> Non </label>
+          </div>
+        </fieldset>
+
+        <div class="screening-section d-none" id="screening-final-temp-worker">
+          <p>
+            Malheureusement, notre dispositif s'adresse uniquement aux
+            fonctionnaires et aux personnes en CDI ...
+          </p>
+          <p>
+            Mais nous vous proposons d'aller voir jeveuxaider.gouv.fr qui
+            recrute aussi des volontaires pour la crise sanitaire.
+          </p>
+          <a
+            title="Aller voir jeveuxaider.gouv.fr"
+            href="https://www.jeveuxaider.gouv.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rf-btn"
+          >
+            Aller voir jeveuxaider.gouv.fr
+          </a>
+        </div>
+
+        <div class="screening-section d-none" id="screening-final-ok">
+          <p>Ça tombe bien! Nous recherchons des personnes comme vous !</p>
+          <a
+            title="Commencer ma candidature"
+            href="<%= applyLink %>"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rf-btn"
+          >
+            Commencer ma candidature
           </a>
         </div>
       </form>
@@ -67,26 +113,38 @@
   // prettier-ignore
   // (we add ; in this code for IE)
   document.addEventListener("DOMContentLoaded", function (event) {
-    document.getElementById("yes").addEventListener(
+    document.getElementById("public-sector-no").addEventListener(
       "click",
       function () {
-        document.getElementById("screening-final-ok").classList.remove("d-none");
         document
-          .getElementById("screening-final-not-ok")
-          .classList.add("d-none");
+          .getElementById("screening-final-not-public-sector")
+          .classList.remove("d-none");
       },
       false,
     );
 
-    document.getElementById("no").addEventListener(
+    document.getElementById("public-sector-yes").addEventListener(
       "click",
       function () {
-        document
-          .getElementById("screening-final-not-ok")
-          .classList.remove("d-none");
-        document.getElementById("screening-final-ok").classList.add("d-none");
+        document.getElementById("temp-worker-section").classList.remove("d-none");
       },
       false,
     );
-  });
+
+    document.getElementById("temp-worker-yes").addEventListener(
+      "click",
+      function () {
+        document.getElementById("screening-final-temp-worker").classList.remove("d-none");
+      },
+      false,
+    );
+
+    document.getElementById("temp-worker-no").addEventListener(
+      "click",
+      function () {
+        document.getElementById("screening-final-ok").classList.remove("d-none");
+      },
+      false,
+    );
+});
 </script>
