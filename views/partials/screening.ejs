@@ -26,10 +26,7 @@
           </div>
         </fieldset>
 
-        <div
-          class="screening-section d-none"
-          id="screening-final-not-public-sector"
-        >
+        <div class="screening-section d-none" id="leaf-not-public-sector">
           <p>
             Malheureusement, notre dispositif s'adresse uniquement aux personnes
             de la fonction publique, donc vous ne pouvez pas vous porter
@@ -50,8 +47,8 @@
           </a>
         </div>
 
-        <div id="temp-worker-subtree" class="d-none">
-          <fieldset class="screening-section" id="temp-worker-section">
+        <div id="subtree-temp-worker" class="d-none">
+          <fieldset class="screening-section">
             <p>
               Etes-vous fonctionnaire stagiaire, ou en CDD, ou prestataire ?
             </p>
@@ -77,10 +74,7 @@
             </div>
           </fieldset>
 
-          <div
-            class="screening-section d-none"
-            id="screening-final-temp-worker"
-          >
+          <div class="screening-section d-none" id="leaf-temp-worker">
             <p>
               Malheureusement, notre dispositif s'adresse uniquement aux
               fonctionnaires et aux personnes en CDI ...
@@ -100,7 +94,7 @@
             </a>
           </div>
 
-          <div class="screening-section d-none" id="screening-final-ok">
+          <div class="screening-section d-none" id="leaf-ok">
             <p>Ça tombe bien! Nous recherchons des personnes comme vous !</p>
             <a
               title="Commencer ma candidature"
@@ -137,8 +131,8 @@
     document.getElementById("public-sector-no").addEventListener(
       "click",
       function () {
-        show("screening-final-not-public-sector");
-        hide("temp-worker-subtree");
+        show("leaf-not-public-sector");
+        hide("subtree-temp-worker");
       },
       false,
     );
@@ -146,8 +140,8 @@
     document.getElementById("public-sector-yes").addEventListener(
       "click",
       function () {
-        show("temp-worker-subtree");
-        hide("screening-final-not-public-sector");
+        show("subtree-temp-worker");
+        hide("leaf-not-public-sector");
       },
       false,
     );
@@ -155,8 +149,8 @@
     document.getElementById("temp-worker-yes").addEventListener(
       "click",
       function () {
-        show("screening-final-temp-worker");
-        hide("screening-final-ok");
+        show("leaf-temp-worker");
+        hide("leaf-ok");
       },
       false,
     );
@@ -164,8 +158,8 @@
     document.getElementById("temp-worker-no").addEventListener(
       "click",
       function () {
-        hide("screening-final-temp-worker");
-        show("screening-final-ok");
+        hide("leaf-temp-worker");
+        show("leaf-ok");
       },
       false,
     );
