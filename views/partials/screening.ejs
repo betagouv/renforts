@@ -121,23 +121,19 @@
 <script>
   // prettier-ignore
   // (we add ; in this code for IE)
-  var show = function (elementId) {
-    document
-      .getElementById(elementId)
-      .classList.remove("d-none");
-  };
-
-  // prettier-ignore
-  // (we add ; in this code for IE)
-  var hide = function (elementId) {
-    document
-      .getElementById(elementId)
-      .classList.add("d-none");
-  };
-
-  // prettier-ignore
-  // (we add ; in this code for IE)
   document.addEventListener("DOMContentLoaded", function (event) {
+    var show = function (elementId) {
+      document
+        .getElementById(elementId)
+        .classList.remove("d-none");
+    };
+
+    var hide = function (elementId) {
+      document
+        .getElementById(elementId)
+        .classList.add("d-none");
+    };
+
     document.getElementById("public-sector-no").addEventListener(
       "click",
       function () {
