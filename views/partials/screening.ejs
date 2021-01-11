@@ -47,19 +47,17 @@
           </a>
         </div>
 
-        <div id="subtree-temp-worker" class="d-none">
+        <div id="subtree-fonctionnaire" class="d-none">
           <fieldset class="screening-section">
-            <p>
-              Etes-vous fonctionnaire stagiaire, ou en CDD, ou prestataire ?
-            </p>
+            <p>Etes-vous fonctionnaire titulaire, ou en CDI ?</p>
             <div class="form-check">
               <input
                 class="form-check-input"
                 type="radio"
-                name="temp-worker-radio"
-                id="temp-worker-yes"
+                name="fonctionnaire-radio"
+                id="fonctionnaire-yes"
               />
-              <label class="form-check-label" for="temp-worker-yes">
+              <label class="form-check-label" for="fonctionnaire-yes">
                 Oui
               </label>
             </div>
@@ -67,17 +65,22 @@
               <input
                 class="form-check-input"
                 type="radio"
-                name="temp-worker-radio"
-                id="temp-worker-no"
+                name="fonctionnaire-radio"
+                id="fonctionnaire-no"
               />
-              <label class="form-check-label" for="temp-worker-no"> Non </label>
+              <label class="form-check-label" for="fonctionnaire-no">
+                Non
+              </label>
             </div>
           </fieldset>
 
-          <div class="screening-section d-none" id="leaf-temp-worker">
+          <div class="screening-section d-none" id="leaf-not-fonctionnaire">
             <p>
               Malheureusement, notre dispositif s'adresse uniquement aux
-              fonctionnaires titulaires et aux personnes en CDI ...
+              fonctionnaires titulaires et aux personnes en CDI. Nous ne pouvons
+              pas le proposer aux fonctionnaires stagiaires, aux retraités, aux
+              fonctionnaires non-affectés, aux personnes en CDD ou aux
+              prestataires du public.
             </p>
             <p>
               Mais nous vous proposons d'aller voir jeveuxaider.gouv.fr qui
@@ -132,7 +135,7 @@
       "click",
       function () {
         show("leaf-not-public-sector");
-        hide("subtree-temp-worker");
+        hide("subtree-fonctionnaire");
       },
       false
     );
@@ -140,25 +143,25 @@
     document.getElementById("public-sector-yes").addEventListener(
       "click",
       function () {
-        show("subtree-temp-worker");
+        show("subtree-fonctionnaire");
         hide("leaf-not-public-sector");
       },
       false
     );
 
-    document.getElementById("temp-worker-yes").addEventListener(
+    document.getElementById("fonctionnaire-no").addEventListener(
       "click",
       function () {
-        show("leaf-temp-worker");
+        show("leaf-not-fonctionnaire");
         hide("leaf-ok");
       },
       false
     );
 
-    document.getElementById("temp-worker-no").addEventListener(
+    document.getElementById("fonctionnaire-yes").addEventListener(
       "click",
       function () {
-        hide("leaf-temp-worker");
+        hide("leaf-not-fonctionnaire");
         show("leaf-ok");
       },
       false
