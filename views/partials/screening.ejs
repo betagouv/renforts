@@ -99,17 +99,66 @@
             </a>
           </div>
 
-          <div class="screening-section d-none" id="leaf-ok">
-            <p>Ça tombe bien! Nous recherchons des personnes comme vous !</p>
-            <a
-              title="Commencer ma candidature"
-              href="<%= applyLink %>"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="rf-btn"
-            >
-              Commencer ma candidature
-            </a>
+          <div id="subtree-retired" class="d-none">
+            <div class="screening-section">
+              <p>
+                Etes-vous à la retraite ou en congés en attendant la retraite ?
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="retired-radio"
+                  id="retired-yes"
+                />
+                <label class="form-check-label" for="retired-yes"> Oui </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="retired-radio"
+                  id="retired-no"
+                />
+                <label class="form-check-label" for="retired-no"> Non </label>
+              </div>
+            </div>
+
+            <div class="screening-section d-none" id="leaf-retired">
+              <p>
+                Malheureusement, notre dispositif fonctionne par mise à
+                disposition d'agents (pour garantir la protection des agents par
+                le droit administratif) et s'adresse uniquement aux personnes
+                actuellement en poste. Nous ne pouvons l'utiliser pour les
+                personnes à la retraite.
+              </p>
+              <p>
+                Nous vous proposons de regarder jeveuxaider.gouv.fr qui recrute
+                des bénévoles pour la crise sanitaire.
+              </p>
+              <a
+                title="Aller voir jeveuxaider.gouv.fr"
+                href="https://www.jeveuxaider.gouv.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rf-btn"
+              >
+                Aller voir jeveuxaider.gouv.fr
+              </a>
+            </div>
+
+            <div class="screening-section d-none" id="leaf-ok">
+              <p>Ça tombe bien! Nous recherchons des personnes comme vous !</p>
+              <a
+                title="Commencer ma candidature"
+                href="<%= applyLink %>"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rf-btn"
+              >
+                Commencer ma candidature
+              </a>
+            </div>
           </div>
         </div>
       </form>
@@ -155,7 +204,7 @@
       "click",
       function () {
         show("leaf-not-fonctionnaire");
-        hide("leaf-ok");
+        hide("subtree-retired");
       },
       false
     );
@@ -164,6 +213,24 @@
       "click",
       function () {
         hide("leaf-not-fonctionnaire");
+        show("subtree-retired");
+      },
+      false
+    );
+
+    document.getElementById("retired-yes").addEventListener(
+      "click",
+      function () {
+        show("leaf-retired");
+        hide("leaf-ok");
+      },
+      false
+    );
+
+    document.getElementById("retired-no").addEventListener(
+      "click",
+      function () {
+        hide("leaf-retired");
         show("leaf-ok");
       },
       false
