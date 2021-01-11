@@ -87,10 +87,7 @@ body:after {
 }
 
 .screening-section {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  padding: 2rem;
-  border: 1px solid var(--g500);
+  margin-top: 3rem;
 }
 
 .d-none {
