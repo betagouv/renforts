@@ -16,6 +16,7 @@
   <div id="mission-title">
     <h1><%= missionTitle %></h1>
   </div>
+  <%- include('partials/mission-summary-CPAM') -%>
   <div id="mission-description">
     <div id="mission-description-context">
       <h2>Contexte</h2>
@@ -146,36 +147,7 @@
         devez vous conformer aux exigences de la politique de sécurité du
         système d’information en vigueur au sein de l’organisme.
       </p>
-      <div class="rf-callout mission-summary">
-        <div class="rf-callout__text">
-          <div class="rf-grid-row rf-grid-row--gutter">
-            <div class="rf-col mission-summary__block">
-              <div class="mission-summary__block__title">Type de contrat</div>
-              <div class="mission-summary__block__content">
-                Mise à disposition
-              </div>
-            </div>
-            <div class="rf-col mission-summary__block">
-              <div class="mission-summary__block__title">Durée</div>
-              <div class="mission-summary__block__content">
-                1 mois renouvelable
-              </div>
-            </div>
-            <div class="rf-col mission-summary__block">
-              <div class="mission-summary__block__title">Horaires</div>
-              <div class="mission-summary__block__content">
-                8h30 - 18h30, min. 2j/semaine
-              </div>
-            </div>
-            <div class="rf-col mission-summary__block">
-              <div class="mission-summary__block__title">Localisation</div>
-              <div class="mission-summary__block__content">
-                En présentiel, CPAM de votre département
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%- include('partials/mission-summary-CPAM') -%>
       <p>
         Pour pouvoir être mis à disposition, vous devez être un agent public
         titulaire ou bien en CDI dans une administration d'Etat.
