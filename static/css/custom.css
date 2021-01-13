@@ -89,13 +89,8 @@ body:after {
 .screening-section {
   margin-top: 3rem;
 }
-
 .screening-section:first-of-type {
   margin-top: 0rem;
-}
-
-.screening-section:last-of-type {
-  margin-bottom: 0rem;
 }
 
 /*
