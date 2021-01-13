@@ -1,22 +1,12 @@
 <div class="rf-callout mission-summary">
   <div class="rf-callout__text">
     <div class="rf-grid-row rf-grid-row--gutter">
+      <% for(let i = 0; i < blocks.length; i++) { %>
       <div class="rf-col mission-summary__block">
-        <div class="mission-summary__block__title"><%= blocks[0].title %></div>
-        <div class="mission-summary__block__content"><%= blocks[0].text %></div>
+        <div class="mission-summary__block__title"><%= blocks[i].title %></div>
+        <div class="mission-summary__block__content"><%= blocks[i].text %></div>
       </div>
-      <div class="rf-col mission-summary__block">
-        <div class="mission-summary__block__title"><%= blocks[1].title %></div>
-        <div class="mission-summary__block__content"><%= blocks[1].text %></div>
-      </div>
-      <div class="rf-col mission-summary__block">
-        <div class="mission-summary__block__title"><%= blocks[2].title %></div>
-        <div class="mission-summary__block__content"><%= blocks[2].text %></div>
-      </div>
-      <div class="rf-col mission-summary__block">
-        <div class="mission-summary__block__title"><%= blocks[3].title %></div>
-        <div class="mission-summary__block__content"><%= blocks[3].text %></div>
-      </div>
+      <% } %>
     </div>
   </div>
 </div>
