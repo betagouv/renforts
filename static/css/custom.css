@@ -90,6 +90,14 @@ body:after {
   margin-top: 3rem;
 }
 
+.screening-section:first-of-type {
+  margin-top: 0rem;
+}
+
+.screening-section:last-of-type {
+  margin-bottom: 0rem;
+}
+
 /*
 Note : Cette classe suit la norme de Bootstrap. Ca serait mieux de suivre la norme BEM :
 http://getbem.com
