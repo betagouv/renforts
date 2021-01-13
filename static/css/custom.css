@@ -87,12 +87,13 @@ body:after {
 }
 
 .screening-section {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  padding: 2rem;
-  border: 1px solid white;
+  margin-top: 3rem;
 }
 
+/*
+Note : Cette classe suit la norme de Bootstrap. Ca serait mieux de suivre la norme BEM :
+http://getbem.com
+*/
 .d-none {
   display: none;
 }
