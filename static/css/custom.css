@@ -101,6 +101,15 @@ http://getbem.com
   display: none;
 }
 
+@media (max-width: 48em) {
+  .mission-summary__block {
+    padding-bottom: 2.5rem;
+  }
+  .mission-summary__block:last-of-type {
+    padding-bottom: 0rem;
+  }
+}
+
 .mission-summary__block {
   padding-right: 2em;
 }
