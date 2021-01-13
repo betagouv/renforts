@@ -101,6 +101,13 @@ http://getbem.com
   display: none;
 }
 
+.mission-summary__block {
+  padding-right: 2em;
+}
+.mission-summary__block:last-of-type {
+  padding-right: 0em;
+}
+
 .mission-summary__block__title {
   text-transform: uppercase;
   font-size: 14px;
