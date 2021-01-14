@@ -89,11 +89,37 @@ body:after {
 .screening-section {
   margin-top: 3rem;
 }
+.screening-section:first-of-type {
+  margin-top: 0rem;
+}
 
-/*
-Note : Cette classe suit la norme de Bootstrap. Ca serait mieux de suivre la norme BEM :
-http://getbem.com
-*/
 .d-none {
   display: none;
+}
+
+.mission-summary__block {
+  padding-bottom: 2.5rem;
+}
+.mission-summary__block:last-of-type {
+  padding-bottom: 0rem;
+}
+
+@media (min-width: 48em) {
+  .mission-summary__block {
+    padding-right: 2em;
+    padding-bottom: 0rem;
+  }
+  .mission-summary__block:last-of-type {
+    padding-right: 0em;
+  }
+}
+
+.mission-summary__block__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.mission-summary__block__content {
+  font-weight: bold;
 }
