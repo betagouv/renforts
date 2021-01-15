@@ -88,9 +88,20 @@ body:after {
 
 .screening-section {
   margin-top: 3rem;
+  transition: opacity 1s linear;
 }
 .screening-section:first-of-type {
   margin-top: 0rem;
+}
+
+.collapsible {
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+  max-height: 0;
+}
+.collapsible--closed {
+}
+.collapsible--open {
 }
 
 .d-none {
