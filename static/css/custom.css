@@ -124,6 +124,10 @@ body:after {
   font-weight: bold;
 }
 
+.faq-question {
+  margin-bottom: 3rem; /* 6w dans le design system */
+}
+
 .faq-subtitle {
   color: #489e61;
 }
