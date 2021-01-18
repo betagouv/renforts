@@ -123,3 +123,7 @@ body:after {
 .mission-summary__block__content {
   font-weight: bold;
 }
+
+.faq-subtitle {
+  color: #489e61;
+}
