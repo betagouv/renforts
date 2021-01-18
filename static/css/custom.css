@@ -37,6 +37,14 @@ body:after {
   background-color: var(--bs300);
 }
 
+/*
+Secondary buttons are broken in version 0.3.1.
+This is a fix until we deal with the update (the update breaks other things)
+*/
+.btn--secondary--temporary-fix {
+  border: 1px var(--bf500) solid;
+}
+
 .text-orange-soft {
   color: var(--os500);
 }
