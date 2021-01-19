@@ -18,6 +18,7 @@ app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "views"))
 
 app.use("/static", express.static("static"))
+app.use("/documents", express.static("documents"))
 // Hack for importing css from npm package
 app.use("/~", express.static(path.join(__dirname, "node_modules")))
 // Populate some variables for all views
@@ -84,7 +85,6 @@ app.get("/mentions-legales", (req, res) => {
     makeMailto,
   })
 })
-
 
 app.get("/faq", (req, res) => {
   res.render("faq", {
