@@ -70,7 +70,9 @@ Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire
 
 Bonne journée,
 `
-  const applyLink = makeMailto(subject, body)
+  const applyLink = process.env.APPLY_URL_CNAV
+    ? process.env.APPLY_URL_CNAV
+    : makeMailto(subject, body)
 
   res.render("mission-CNAV", {
     withApplyButton: true,
