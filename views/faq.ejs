@@ -1,9 +1,21 @@
 <%- include('partials/header') -%>
 
 <div class="rf-container rf-mb-5w">
-  <h2>Foire Aux Questions (FAQ)</h2>
-  <div id="breadcrumbs">
-    <a href="/" title="Retour à l'accueil">Accueil</a> > Foire Aux Questions
+  <nav class="rf-breadcrumb" aria-label="vous êtes ici :">
+    <button class="rf-breadcrumb__button" hidden>Voir le fil d’Ariane</button>
+    <ol class="rf-breadcrumb__list">
+      <li class="rf-breadcrumb__item">
+        <a href="/">Accueil</a>
+      </li>
+      <li class="rf-breadcrumb__item rf-breadcrumb__item--current" aria-current="page">
+        Foire Aux Questions
+      </li>
+    </ol>
+  </nav>
+
+  <h1>Foire Aux Questions (FAQ)</h1>
+  <div>
+    Vous êtes nombreux à nous poser des questions ! Voici les réponses aux plus fréquentes.
   </div>
   <div>
     <div class="faq-question">

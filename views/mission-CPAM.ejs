@@ -1,17 +1,25 @@
 <%- include('partials/header') -%>
-<div class="rf-grid-row rf-grid-row--center">
+<div class="rf-container">
+  <nav class="rf-breadcrumb" aria-label="vous êtes ici :">
+    <button class="rf-breadcrumb__button" hidden>Voir le fil d’Ariane</button>
+    <ol class="rf-breadcrumb__list">
+      <li class="rf-breadcrumb__item">
+        <a href="/">Accueil</a>
+      </li>
+      <li
+        class="rf-breadcrumb__item rf-breadcrumb__item--current"
+        aria-current="page"
+      >
+        <%= missionTitle %>
+      </li>
+    </ol>
+  </nav>
   <div class="rf-grid-row rf-grid-row--center">
     <img
       src="/static/images/organisations/logo-cpam-fullscreen.png"
       title="Logo Assurance Maladie"
       style="max-height: 250px"
-      class="rf-p-2w"
     />
-  </div>
-</div>
-<div class="rf-container">
-  <div id="breadcrumbs">
-    <a href="/" title="Retour à l'accueil">Accueil</a> > <%= missionTitle %>
   </div>
   <div id="mission-title">
     <h1><%= missionTitle %></h1>
