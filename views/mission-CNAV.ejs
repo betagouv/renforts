@@ -1,16 +1,15 @@
 <%- include('partials/header') -%>
 <div class="rf-container">
-  <nav class="rf-breadcrumb" aria-label="vous êtes ici :">
-    <button class="rf-breadcrumb__button" hidden>Voir le fil d’Ariane</button>
-    <ol class="rf-breadcrumb__list">
-      <li class="rf-breadcrumb__item">
-          <a href="/">Accueil</a>
-      </li>
-      <li class="rf-breadcrumb__item rf-breadcrumb__item--current" aria-current="page">
-        <%= missionTitle %>
-      </li>
-    </ol>
-  </nav>
+  <%- include('partials/breadcrumbs',
+    {
+      items: [
+        { label: 'Accueil', url: '/' },
+        { label: missionTitle },
+      ],
+    }
+  )
+  -%>
+
   <div class="rf-grid-row rf-grid-row--center">
     <img src="/static/images/organisations/logo-cnav-fullscreen.png"
           title="Logo CNAV"

@@ -1,17 +1,16 @@
 <%- include('partials/header') -%>
 
 <div class="rf-container rf-mb-5w">
-  <nav class="rf-breadcrumb" aria-label="vous êtes ici :">
-    <button class="rf-breadcrumb__button" hidden>Voir le fil d’Ariane</button>
-    <ol class="rf-breadcrumb__list">
-      <li class="rf-breadcrumb__item">
-        <a href="/">Accueil</a>
-      </li>
-      <li class="rf-breadcrumb__item rf-breadcrumb__item--current" aria-current="page">
-        Foire Aux Questions
-      </li>
-    </ol>
-  </nav>
+
+  <%- include('partials/breadcrumbs',
+    {
+      items: [
+        { label: 'Accueil', url: '/' },
+        { label: 'Foire Aux Questions' },
+      ],
+    }
+  )
+  -%>
 
   <h1>Foire Aux Questions (FAQ)</h1>
   <div>
