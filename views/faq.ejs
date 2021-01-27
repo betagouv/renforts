@@ -1,258 +1,219 @@
 <%- include('partials/header') -%>
+    <div class="rf-container rf-mb-5w">
+        <%- include('partials/breadcrumbs',
+          {
+            items: [
+              { label: 'Accueil', url: '/' },
+              { label: 'Foire Aux Questions' },
+            ],
+          }
+        )
+        -%>
+        <h2>Foire Aux Questions (FAQ)</h2>
+        <div>
+          Vous êtes nombreux à nous poser des questions ! Voici les réponses aux plus fréquentes.
+        </div>
+        <div>
+            <div class="faq-question">
+                <h3>Suis-je éligible pour candidater aux missions Volontaires ?</h3>
+                <p>
+                    Pour pouvoir être éligible à candidater, je dois être agent de l’Etat : <b>fonctionnaire titulaire
+                        ou agent
+                        contractuel en CDI</b>, de la <b>fonction publique d'Etat.</b>
+                </p>
+                <p>
+                    Malheureusement pour des raisons de cadre juridique nous ne pouvons pas accueillir de personnes sous
+                    d'autres
+                    statuts. Nous ne pouvons donc PAS prendre ces statuts : fonctionnaire stagiaire (ex : école IRA),
+                    agents de la fonction publique territoriale ou hospitalière, fonctionnaire titulaire d'Etat en CET,
+                    retraité,
+                    en disponibilité, en congé parental, en détachement.
+                </p>
+                <p>
+                    Si vous n'êtes pas dans une catégorie concernée par notre dispositif mais que vous voulez vous
+                    rendre utile pour
+                    la crise sanitaire, vous pouvez par exemple postuler sur le site jeveuxaider.gouv.fr qui cherche des
+                    bénévoles
+                    pour ses missions :
+                    <a href="https://www.jeveuxaider.gouv.fr/" target="_blank"
+                        rel="noopener noreferrer">https://www.jeveuxaider.gouv.fr/</a>
+                </p>
+            </div>
+            <div class="faq-question">
+                <h3>Quels seront mes horaires et mon régime de travail ?</h3>
+                <p><b>Je conserve mes horaires habituels et mon régime de travail habituel</b>, à temps plein ou temps
+                    partiel.</p>
+                <p>
+                    Certaines missions sont compatibles avec le travail le samedi et dimanche. Si mes jours de travail
+                    habituels
+                    comprennent le samedi ou dimanche, je pourrai être amené à travailler le weekend. Si je travaille
+                    d'habitude
+                    du lundi au vendredi, je ne travaillerai pas le weekend pour la mission.
+                </p>
+                <p>
+                    En cas d’exercice le samedi ou dimanche, aucune rémunération notamment en heures supplémentaires ne
+                    sera versée
+                    en supplément à la rémunération habituelle.
+                    La journée de repos accordée à ce titre interviendra sur le temps de travail à réaliser dans mon
+                    administration
+                    d’origine.
+                </p>
+                <p>
+                    Chaque mission propose ses horaires, nous vous proposons d'aller voir les fiches de chaque mission
+                    proposée.
+                </p>
+            </div>
+            <div class="faq-question">
+                <h3>Comment vais-je être rémunéré.e ?</h3>
+                <p>
+                    <b>Ma rémunération est inchangée.</b> Je garde la rémunération de mon poste d'origine.
+                </p>
+                <p>
+                    Il n'y aura pas d'heures supplémentaires rémunérées. Il n'y aura pas non plus de remboursement pour
+                    des frais
+                    de téléphone ou d'internet engagés si la mission exige d'utiliser mon matériel personnel.
+                </p>
+            </div>
+            <div class="faq-question">
+                <h3>
+                    Serais-je remboursé.e d’éventuels frais en cas de transports accrus ou de
+                    dépassement de forfait internet ou téléphone ?
+                </h3>
+                <p>
+                    <b>Non</b>.
+                    <br />
+                    Le dispositif est simplifié pour pouvoir être mis en
+                    place plus rapidement, donc nous ne pouvons malheureusement pas fournir
+                    ces remboursements. Nous vous invitons à en parler lors de votre
+                    candidature si vous pensez que ce sera un problème pour vous.
+                </p>
+            </div>
+            <div class="faq-question">
+                <h3>Les missions sont-elles à réaliser en présentiel ? </h3>
+                <p>
+                    Chaque mission a ses contraintes, nous vous suggérons d'aller voir la fiche de chaque mission.
+                </p>
+                <p>
+                    Pour la mission « conseiller contact tracing » avec la CPAM, la mission s'éxerce <b>en
+                        présentiel</b>,
+                    dans les locaux de la CPAM la plus proche de votre domicile.
+                </p>
+                <p>
+                    Pour la mission « conseiller maintien lien social » avec la CNAV, la mission
+                    s’exerce <b>à votre domicile</b>.
+                    La mission étant exercée à domicile, elle entraine <b>l’utilisation de votre matériel
+                        téléphonique et informatique personnel</b> si votre employeur habituel n'en a pas mis à votre
+                    disposition.
+                    Nous ne pourrons pas vous rembourser d'éventuels frais supplémentaires de téléphone ou d'internet,
+                    donc
+                    vous devez disposer de forfaits illimités.
+                </p>
+            </div>
+            <div class="faq-question">
+                <h3>Puis je mettre fin à la mission ?</h3>
+                <p>
+                    Je dois m’engager à respecter les conditions de la mise à disposition et je ne suis susceptible d’y
+                    mettre
+                    fin que pour circonstances individuelles exceptionnelles, mais pas pour des raisons de service.
+                </p>
+            </div>
+            <div class="faq-question">
+                <a href="#accord-de-ma-hiérarchie">
+                    <h3 id="accord-de-ma-hiérarchie">
+                        Comment obtenir l'accord de mon supérieur hiérarchique ?
+                    </h3>
+                </a>
+                <p>
+                    Votre supérieur hiérarchique doit assurer la continuité de son service,
+                    qui pourrait être perturbée par votre absence lorsque vous être sur la
+                    mission Volontaires. C'est pourquoi nous avons besoin de son accord pour
+                    valider la mise à disposition.
+                </p>
+                <p>
+                    Pour lui présenter la démarche, vous pouvez lui envoyer (ou lui
+                    imprimer) cette plaquette de présentation :
+                </p>
+                <a class="rf-btn rf-btn--secondary btn--secondary--temporary-fix"
+                    href="/documents/plaquette_pour_superieur.pdf" target="_blank" rel="noopener noreferrer">
+                    Voir la plaquette de présentation
+                </a>
+                <p>
+                    Pour le dossier de candidature, nous vous demanderons une lettre
+                    d'accord remplie par votre supérieur hiérarchique. Nous vous proposons
+                    un modèle de lettre à faire remplir :
+                </p>
+                <a class="rf-btn rf-btn--secondary btn--secondary--temporary-fix"
+                    href="/documents/accord_hierarchique.docx" target="_blank" rel="noopener noreferrer">
+                    Voir le modèle de lettre d'accord
+                </a>
+            </div>
+            <div class="faq-question">
+                <h3>Que doit savoir mon responsable avant de prendre une décision ?</h3>
+                <p>
+                    <b>Il doit avoir connaissance des informations suivantes :</b>
+                <ul>
+                    <li>Les deux missions supposent un engagement de deux jours au minimum par semaine pendant un mois
+                        et
+                        peuvent être renouvelées ;</li>
+                    <li>Ces jours sont le plus souvent fixes, sauf cas particulier ;</li>
+                    <li>Les conditions d’exercice de la mission sont définies par une convention de mise à disposition
+                        signée
+                        entre votre service et la CNAV ou CPAM, ce qui me garantit :
+                        <ul>
+                            <li>Le maintien de la rémunération versée sur mon poste actuel, mais les frais
+                                supplémentaires
+                                engagés au titre de la mission ne seront pas remboursés</li>
+                            <li>Le maintien de mon régime de travail (horaires, temps et quotité de travail) :
+                                Pour la CPAM : la plage horaire à couvrir est 8h30-18H30 sur la semaine avec weekend
+                                inclus.
+                                Seuls les agents exerçant habituellement pendant le weekend auront vocation à le faire,
+                                avec les
+                                modalités de récupération applicables dans leur service d’origine. Les autres agents
+                                souhaitant
+                                le faire n’auront pas de rémunération complémentaire mais bénéficieront des deux jours
+                                de repos
+                                prévus.
+                            </li>
+                            <li>La conservation de la couverture sociale de l’employeur (maladie et accidents)</li>
+                            <li>La vérification de l’équipement que je dois fournir pour la Mission CNAV à mon domicile
+                                ou celui
+                                fourni par la CPAM (mission CPAM)</li>
+                            <li>La formation est prise en charge par l’organisme d’accueil</li>
+                            <li>L’engagement pour la mission est subordonné au respect des conditions d’exercice de la
+                                mission
+                                et sa durée sauf circonstances personnelles très exceptionnelles et non liées à des
+                                nécessités
+                                de service.</li>
+                        </ul>
 
-<div class="rf-container rf-mb-5w">
-
-  <%- include('partials/breadcrumbs',
-    {
-      items: [
-        { label: 'Accueil', url: '/' },
-        { label: 'Foire Aux Questions' },
-      ],
-    }
-  )
-  -%>
-
-  <h1>Foire Aux Questions (FAQ)</h1>
-  <div>
-    Vous êtes nombreux à nous poser des questions ! Voici les réponses aux plus fréquentes.
-  </div>
-  <div>
-    <div class="faq-question">
-      <h3>Je suis volontaire pour une mission, comment cela se passe-t-il ?</h3>
-      <img src="/documents/plaquette_pour_candidats.png" alt="Schéma du processus de candidature">
-      <h4 class="faq-subtitle">Etape 1 : je me renseigne sur les missions</h4>
-      <p>
-          Je prends connaissance des fiches de postes correspondantes aux deux missions proposées sur la
-          plateforme (<a href="/#offres-de-mission">cliquez ici pour voir les missions</a>).
-      </p>
-      <p>
-        Je dois pouvoir me rendre disponible au minimum <b>deux jours par semaine
-        sur mon temps de travail habituel</b>, de préférence sur des jours fixes (par exemple les mardis et jeudis), pendant au
-        minimum un mois.
-        La mission est renouvelable après un mois.
-      </p>
-      <h4 class="faq-subtitle">Etape 2 : j'obtiens l'accord de ma hiérarchie</h4>
-      <p>
-        Je préviens <b>mon supérieur hiérarchique qui doit me donner son accord</b>, sans quoi la mission ne
-        peut être réalisée. (Vous pouvez aller voir la section :
-        <a href="#accord-de-ma-hiérarchie">Comment obtenir l'accord de mon supérieur hiérarchique ?</a>)
-      </p>
-      <h4 class="faq-subtitle">Etape 3 : je postule</h4>
-      <p>
-        Une fois l’accord hiérarchique acquis, je peux faire ma demande de candidature.
-        Je vais sur la page de la mission et je clique "Postuler".
-        (<a href="/#offres-de-mission">cliquez ici pour voir les missions</a>)
-      </p>
-      <p>
-        Ma candidature est transmise pour validation à l'organisme qui va me recevoir.
-        Je suis éventuellement recontacté.e pour régler les détails.
-      </p>
-      <h4 class="faq-subtitle">Etape 4 : je signe la convention de mise à disposition</h4>
-      <p>
-        Une fois ma candidature validée, il faut dresser une convention de mise à disposition. Les services RH
-        de l'organisme receveur prennent contact avec ceux de mon organisme d'origine (ils contacteront la personne
-        référente pour le suivi RH de mon dossier, que j'ai indiquée dans le formulaire de candidature.).
-        Les deux services RH négocient une convention. (Voir le modèle de convention proposée : <a href="#cadre-juridique">section cadre juridique</a>)
-      </p>
-      <p>
-        Quand la convention est finalisée, <b>les services RH reviennent vers moi pour me prévenir</b>.
-        <b>La convention est signée par moi-même et par les deux
-        employeurs</b>.
-        Une copie de la convention m'est remise.
-      </p>
-      <h4 class="faq-subtitle">
-        La mission peut maintenant démarrer !
-      </h4>
+                        Si mon employeur a besoin de compléments d’information, il s’adresse à la personne référente RH
+                        de son
+                        service.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="faq-question">
+                <a href="#cadre-juridique">
+                    <h3 id="cadre-juridique">
+                        Je suis RH, quel est le cadre juridique de la mission ?
+                    </h3>
+                </a>
+                <p>Il s'agit d'une mise à disposition de l'agent.</p>
+                <p>
+                    Nous proposons une convention-type comme point de départ, et elle pourra
+                    être discutée entre les RH des deux organismes (organisme initial de
+                    l'agent et organisme receveur).
+                </p>
+                <a class="rf-btn rf-btn--secondary btn--secondary--temporary-fix"
+                    href="/documents/convention_MAD_CPAM.docx" target="_blank" rel="noopener noreferrer">
+                    Voir la convention-type pour la mission CPAM
+                </a>
+                <a class="rf-btn rf-btn--secondary btn--secondary--temporary-fix"
+                    href="/documents/convention_MAD_CNAV.docx" target="_blank" rel="noopener noreferrer">
+                    Voir la convention-type pour la mission CNAV
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="faq-question">
-      <h3>Suis-je éligible pour candidater aux missions Volontaires ?</h3>
-      <p>
-        Pour pouvoir être éligible à candidater, je dois être agent de l’Etat : <b>fonctionnaire titulaire ou agent
-        contractuel en CDI</b>, de la <b>fonction publique d'Etat.</b>
-      </p>
-      <p>
-        Malheureusement pour des raisons de cadre juridique nous ne pouvons pas accueillir de personnes sous d'autres
-          statuts. Nous ne pouvons donc PAS prendre ces statuts : fonctionnaire stagiaire (ex : école IRA),
-          agents de la fonction publique territoriale ou hospitalière, fonctionnaire titulaire d'Etat en CET, retraité,
-          en disponibilité, en congé parental, en détachement.
-      </p>
-      <p>
-        Si vous n'êtes pas dans une catégorie concernée par notre dispositif mais que vous voulez vous rendre utile pour
-        la crise sanitaire, vous pouvez par exemple postuler sur le site jeveuxaider.gouv.fr qui cherche des bénévoles
-        pour ses missions :
-        <a href="https://www.jeveuxaider.gouv.fr/" target="_blank"
-        rel="noopener noreferrer">https://www.jeveuxaider.gouv.fr/</a>
-      </p>
-    </div>
-    <div class="faq-question">
-      <h3>Quels seront mes horaires et mon régime de travail ?</h3>
-      <p><b>Je conserve mes horaires habituels et mon régime de travail habituel</b>, à temps plein ou temps partiel.</p>
-      <p>
-        Certaines missions sont compatibles avec le travail le samedi et dimanche. Si mes jours de travail habituels
-        comprennent le samedi ou dimanche, je pourrai être amené à travailler le weekend. Si je travaille d'habitude
-        du lundi au vendredi, je ne travaillerai pas le weekend pour la mission.
-      </p>
-      <p>
-        En cas d’exercice le samedi ou dimanche, aucune rémunération notamment en heures supplémentaires ne sera versée
-        en supplément à la rémunération habituelle.
-        La journée de repos accordée à ce titre interviendra sur le temps de travail à réaliser dans mon administration
-        d’origine.
-      </p>
-      <p>
-        Chaque mission propose ses horaires, nous vous proposons d'aller voir les fiches de chaque mission proposée.
-      </p>
-    </div>
-    <div class="faq-question">
-      <h3>Comment vais-je être rémunéré.e ?</h3>
-      <p>
-        <b>Ma rémunération est inchangée.</b> Je garde la rémunération de mon poste d'origine.
-      </p>
-      <p>
-        Il n'y aura pas d'heures supplémentaires rémunérées. Il n'y aura pas non plus de remboursement pour des frais
-        de téléphone ou d'internet engagés si la mission exige d'utiliser mon matériel personnel.
-      </p>
-    </div>
-    <div class="faq-question">
-      <h3>
-        Serais-je remboursé.e d’éventuels frais en cas de transports accrus ou de
-        dépassement de forfait internet ou téléphone ?
-      </h3>
-      <p>
-        <b>Non</b>.
-        <br />
-        Le dispositif est simplifié pour pouvoir être mis en
-        place plus rapidement, donc nous ne pouvons malheureusement pas fournir
-        ces remboursements. Nous vous invitons à en parler lors de votre
-        candidature si vous pensez que ce sera un problème pour vous.
-      </p>
-    </div>
-    <div class="faq-question">
-      <h3>Les missions sont-elles à réaliser en présentiel ? </h3>
-      <p>
-        Chaque mission a ses contraintes, nous vous suggérons d'aller voir la fiche de chaque mission.
-      </p>
-      <p>
-        Pour la mission « conseiller contact tracing » avec la CPAM, la mission s'éxerce <b>en présentiel</b>,
-        dans les locaux de la CPAM la plus proche de votre domicile.
-      </p>
-      <p>
-        Pour la mission « conseiller maintien lien social » avec la CNAV, la mission
-        s’exerce <b>à votre domicile</b>.
-        La mission étant exercée à domicile, elle entraine <b>l’utilisation de votre matériel
-        téléphonique et informatique personnel</b> si votre employeur habituel n'en a pas mis à votre disposition.
-        Nous ne pourrons pas vous rembourser d'éventuels frais supplémentaires de téléphone ou d'internet, donc
-        vous devez disposer de forfaits illimités.
-      </p>
-    </div>
-    <div class="faq-question">
-      <h3>Puis je mettre fin à la mission ?</h3>
-      <p>
-        Je dois m’engager à respecter les conditions de la mise à disposition et je ne suis susceptible d’y mettre
-        fin que pour circonstances individuelles exceptionnelles, mais pas pour des raisons de service.
-      </p>
-    </div>
-    <div class="faq-question">
-      <a href="#accord-de-ma-hiérarchie">
-        <h3 id="accord-de-ma-hiérarchie">
-          Comment obtenir l'accord de mon supérieur hiérarchique ?
-        </h3>
-      </a>
-      <p>
-        Votre supérieur hiérarchique doit assurer la continuité de son service,
-        qui pourrait être perturbée par votre absence lorsque vous être sur la
-        mission Volontaires. C'est pourquoi nous avons besoin de son accord pour
-        valider la mise à disposition.
-      </p>
-      <p>
-        Pour lui présenter la démarche, vous pouvez lui envoyer (ou lui
-        imprimer) cette plaquette de présentation :
-      </p>
-      <a
-        class="rf-btn rf-btn--secondary btn--secondary--temporary-fix"
-        href="/documents/plaquette_pour_superieur.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Voir la plaquette de présentation
-      </a>
-      <p>
-        Pour le dossier de candidature, nous vous demanderons une lettre
-        d'accord remplie par votre supérieur hiérarchique. Nous vous proposons
-        un modèle de lettre à faire remplir :
-      </p>
-      <a
-        class="rf-btn rf-btn--secondary btn--secondary--temporary-fix"
-        href="/documents/accord_hierarchique.docx"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Voir le modèle de lettre d'accord
-      </a>
-    </div>
-    <div class="faq-question">
-      <h3>Que doit savoir mon responsable avant de prendre une décision ?</h3>
-      <p>
-        <b>Il doit avoir connaissance des informations suivantes :</b>
-        <ul>
-          <li>Les deux missions supposent un engagement de deux jours au minimum par semaine pendant un mois et
-              peuvent être renouvelées ;</li>
-          <li>Ces jours sont le plus souvent fixes, sauf cas particulier ;</li>
-          <li>Les conditions d’exercice de la mission sont définies par une convention de mise à disposition signée
-              entre votre service et la CNAV ou CPAM, ce qui me garantit :
-          <ul>
-            <li>Le maintien de la rémunération versée sur mon poste actuel, mais les frais supplémentaires
-                engagés au titre de la mission ne seront pas remboursés</li>
-            <li>Le maintien de mon régime de travail (horaires, temps et quotité de travail) :
-                Pour la CPAM : la plage horaire à couvrir est 8h30-18H30 sur la semaine avec weekend inclus.
-                Seuls les agents exerçant habituellement pendant le weekend auront vocation à le faire, avec les
-                modalités de récupération applicables dans leur service d’origine. Les autres agents souhaitant
-                le faire n’auront pas de rémunération complémentaire mais bénéficieront des deux jours de repos
-                prévus.
-            </li>
-            <li>La conservation de la couverture sociale de l’employeur (maladie et accidents)</li>
-            <li>La vérification de l’équipement que je dois fournir pour la Mission CNAV à mon domicile ou celui
-                fourni par la CPAM (mission CPAM)</li>
-            <li>La formation est prise en charge par l’organisme d’accueil</li>
-            <li>L’engagement pour la mission est subordonné au respect des conditions d’exercice de la mission
-                et sa durée sauf circonstances personnelles très exceptionnelles et non liées à des nécessités
-                de service.</li>
-          </ul>
-
-          Si mon employeur a besoin de compléments d’information, il s’adresse à la personne référente RH de son
-          service.
-        </li>
-      </ul>
-    </p>
-    </div>
-    <div class="faq-question">
-      <a href="#cadre-juridique">
-        <h3 id="cadre-juridique">
-          Je suis RH, quel est le cadre juridique de la mission ?
-        </h3>
-      </a>
-      <p>Il s'agit d'une mise à disposition de l'agent.</p>
-      <p>
-        Nous proposons une convention-type comme point de départ, et elle pourra
-        être discutée entre les RH des deux organismes (organisme initial de
-        l'agent et organisme receveur).
-      </p>
-      <a
-        class="rf-btn rf-btn--secondary btn--secondary--temporary-fix"
-        href="/documents/convention_MAD_CPAM.docx"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Voir la convention-type pour la mission CPAM
-      </a>
-      <a
-        class="rf-btn rf-btn--secondary btn--secondary--temporary-fix"
-        href="/documents/convention_MAD_CNAV.docx"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Voir la convention-type pour la mission CNAV
-      </a>
-    </div>
-  </div>
-</div>
-<%- include('partials/footer') -%>
+    <%- include('partials/footer') -%>
