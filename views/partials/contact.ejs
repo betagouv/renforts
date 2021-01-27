@@ -10,7 +10,8 @@
                             <p class="rf-mb-4w rf-mb-md-0">
                                 Vous avez une question sur le dispositif ? Accédez à la Foire Aux Questions
                             </p>
-                            <a title="FAQ" href="/faq" class="rf-btn rf-text--lg">
+                            <a title="FAQ" href="/faq"
+                                class="rf-btn rf-btn--secondary btn--secondary--temporary-fix rf-text--lg">
                                 F.A.Q.
                             </a>
                         </div>
@@ -31,12 +32,15 @@
                         <div class="rf-col" style="text-align: left">
                             <p class="rf-mb-4w rf-mb-md-0">
                                 Vous ne trouvez pas l'info que vous cherchez sur le site ? Contactez-nous sur
-                                <span class="rf-text--lg rf-mx-1v">
-                                    <b><%= contactEmail %></b>
+                                <span class="rf-mx-1v">
+                                    <b>
+                                        <%= contactEmail %>
+                                    </b>
                                 </span>
                             </p>
                             <a title="Contactez-nous" href="<%= makeMailto('Bonjour !') %>" target="_blank"
-                                rel="noopener noreferrer" class="rf-btn rf-text--lg">
+                                rel="noopener noreferrer"
+                                class="rf-btn rf-btn--secondary btn--secondary--temporary-fix rf-text--lg">
                                 Contactez-nous.
                             </a>
                         </div>
