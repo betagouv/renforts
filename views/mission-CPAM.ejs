@@ -1,17 +1,14 @@
 <%- include('partials/header') -%>
-<div class="rf-grid-row rf-grid-row--center">
+<div class="rf-container">
+  <%- include('partials/breadcrumbs', { items: [ { label: 'Accueil', url: '/' },
+  { label: missionTitle }, ], } ) -%>
+
   <div class="rf-grid-row rf-grid-row--center">
     <img
       src="/static/images/organisations/logo-cpam-fullscreen.png"
       title="Logo Assurance Maladie"
       style="max-height: 250px"
-      class="rf-p-2w"
     />
-  </div>
-</div>
-<div class="rf-container">
-  <div id="breadcrumbs">
-    <a href="/" title="Retour à l'accueil">Accueil</a> > <%= missionTitle %>
   </div>
   <div id="mission-title">
     <h1><%= missionTitle %></h1>

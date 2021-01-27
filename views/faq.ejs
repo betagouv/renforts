@@ -1,9 +1,17 @@
 <%- include('partials/header') -%>
-
     <div class="rf-container rf-mb-5w">
+        <%- include('partials/breadcrumbs',
+          {
+            items: [
+              { label: 'Accueil', url: '/' },
+              { label: 'Foire Aux Questions' },
+            ],
+          }
+        )
+        -%>
         <h2>Foire Aux Questions (FAQ)</h2>
-        <div id="breadcrumbs">
-            <a href="/" title="Retour à l'accueil">Accueil</a> > Foire Aux Questions
+        <div>
+          Vous êtes nombreux à nous poser des questions ! Voici les réponses aux plus fréquentes.
         </div>
         <div>
             <div class="faq-question">

@@ -1,15 +1,21 @@
 <%- include('partials/header') -%>
+<div class="rf-container">
+  <%- include('partials/breadcrumbs',
+    {
+      items: [
+        { label: 'Accueil', url: '/' },
+        { label: missionTitle },
+      ],
+    }
+  )
+  -%>
+
   <div class="rf-grid-row rf-grid-row--center">
-    <div class="rf-grid-row rf-grid-row--center">
-      <img src="/static/images/organisations/logo-cnav-fullscreen.png"
-           title="Logo CNAV"
-           style="max-height: 250px;">
-    </div>
+    <img src="/static/images/organisations/logo-cnav-fullscreen.png"
+          title="Logo CNAV"
+          style="max-height: 250px;">
   </div>
-  <div class="rf-container">
-    <div id="breadcrumbs">
-      <a href="/" title="Retour à l'accueil">Accueil</a> > <%= missionTitle %>
-    </div>
+  <div>
     <div id="mission-title">
       <h1>
         <%= missionTitle %>
@@ -180,4 +186,5 @@
       <%- include('partials/apply') -%>
     </div>
   </div>
-  <%- include('partials/footer') -%>
+</div>
+<%- include('partials/footer') -%>
