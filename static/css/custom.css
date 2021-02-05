@@ -139,3 +139,124 @@ This is a fix until we deal with the update (the update breaks other things)
 .faq-subtitle {
   color: #489e61;
 }
+
+/* lines with dot over it for "Comment ca marche?" */
+
+.wraper {
+  padding: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  width: 500px;
+  margin: 10px auto;
+}
+
+h1 {
+  margin: 50px auto;
+}
+
+.container {
+  border-top: 2px solid #000;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.link {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+
+}
+
+.link a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.link:first-child {
+  margin-left: -55px;
+}
+
+.link:last-child {
+  margin-right: -55px;
+}
+
+.link::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  border-radius: 10px;
+  top: -16px;
+  left: 50%;
+  transform: translatex(-50%);
+  border: 2px solid black;
+}
+
+.active::after,
+.link:hover::after {
+  background: black;
+}
+
+p.lead {
+  font-weight: 600;
+  margin: 50px auto;
+  line-height: 1.5;
+}
+
+.wraper ul .container {
+  list-style-type: none;
+  list-style: none;
+}
+
+.container2 {
+  /*border-top: 2px solid #000;*/
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.icon {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.icon a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.icon:first-child {
+  margin-left: -55px;
+}
+
+.icon:last-child {
+  margin-right: -55px;
+}
+
+.icon::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  position: absolute;
+  /* border-radius: 10px; */
+  top: -16px;
+  left: 50%;
+  /*transform: translatex(-50%);
+   border: 2px solid black;*/
+}
