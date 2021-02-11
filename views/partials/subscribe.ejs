@@ -9,11 +9,13 @@
                             <span class="rf-mb-4w rf-mb-md-0">
                                 Vous avez une question sur le dispositif ? Contactez-nous sur
                                 <span class="rf-text--lg rf-mx-1v">
-                                    <b><%= contactEmail %></b>
+                                    <b>
+                                        <%= contactEmail %>
+                                    </b>
                                 </span>
                             </span>
-                            <a title="Contactez-nous" href="<%= makeMailto('Bonjour !') %>" target="_blank"
-                                rel="noopener noreferrer" class="rf-btn rf-text--lg">
+                            <a title="Contactez-nous" href="<%= makeMailto(contactEmail, 'Bonjour !') %>"
+                                target="_blank" rel="noopener noreferrer" class="rf-btn rf-text--lg">
                                 Contactez-nous.
                             </a>
                         </div>
