@@ -55,6 +55,7 @@ Bonne journée,
     withApplyButton: true,
     missionTitle,
     applyLink,
+    contactCPAMEmail,
     makeMailto,
   })
 })
