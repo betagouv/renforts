@@ -3,7 +3,7 @@ const path = require("path")
 
 require("dotenv").config()
 
-const { contactEmail, makeMailto } = require("./utils/mail")
+const { contactEmail, contactCPAMEmail, makeMailto } = require("./utils/mail")
 
 const appName = "volontaires.fonction-publique.gouv.fr"
 
@@ -49,12 +49,13 @@ Bonne journée,
 `
   const applyLink = process.env.APPLY_URL_CPAM
     ? process.env.APPLY_URL_CPAM
-    : makeMailto(subject, body)
+    : makeMailto(contactCPAMEmail, subject, body)
 
   res.render("mission-CPAM", {
     withApplyButton: true,
     missionTitle,
     applyLink,
+    contactCPAMEmail,
     makeMailto,
   })
 })
@@ -72,7 +73,7 @@ Bonne journée,
 `
   const applyLink = process.env.APPLY_URL_CNAV
     ? process.env.APPLY_URL_CNAV
-    : makeMailto(subject, body)
+    : makeMailto(contactEmail, subject, body)
 
   res.render("mission-CNAV", {
     withApplyButton: true,
@@ -84,12 +85,14 @@ Bonne journée,
 
 app.get("/mentions-legales", (req, res) => {
   res.render("legalNotice", {
+    contactEmail,
     makeMailto,
   })
 })
 
 app.get("/faq", (req, res) => {
   res.render("faq", {
+    contactEmail,
     makeMailto,
   })
 })

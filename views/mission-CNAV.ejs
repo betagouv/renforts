@@ -1,190 +1,219 @@
 <%- include('partials/header') -%>
-<div class="rf-container">
-  <%- include('partials/breadcrumbs',
-    {
-      items: [
-        { label: 'Accueil', url: '/' },
-        { label: missionTitle },
-      ],
-    }
-  )
-  -%>
+  <div class="rf-container">
+    <%- include('partials/breadcrumbs', { items: [ { label: 'Accueil' , url: '/' }, { label: missionTitle }, ], } ) -%>
 
-  <div class="rf-grid-row rf-grid-row--center">
-    <img src="/static/images/organisations/logo-cnav-fullscreen.png"
-          title="Logo CNAV"
-          style="max-height: 250px;">
-  </div>
-  <div>
-    <div id="mission-title">
-      <h1>
-        <%= missionTitle %>
-      </h1>
-    </div>
-    <%- include('partials/mission-summary-CNAV') -%>
-    <div id="mission-description">
-      <div id="mission-description-context">
-        <h2>Contexte</h2>
-        <p>
-        Face à l’épidémie de COVID-19, les pouvoirs publics redoublent d’attention vers les personnes âgées,
-        d’autant plus fragiles, puisque leurs accompagnements et liens sociaux habituels sont durablement fragilisés.
-        </p>
-        <p>
-        Au regard du contexte sanitaire inédit, de l’âge et de la fragilité des bénéficiaires
-        de la politique d’action sociale de l’Assurance retraite, la Direction nationale de l’action
-        sociale a décidé de suspendre à titre temporaire les actions collectives de prévention
-        (ateliers prévention, actions collectives de lien social, conférences, salons, réunions collectives)
-        en maintenant les interventions des aides à domicile, des structures d’évaluation et des prestataires
-        habitat au domicile des retraités, sous réserve de la capacité des structures à mettre en œuvre les
-        préconisations sanitaires permettant de protéger la santé de leurs salariés et des retraités et en
-        recueillant l’accord expresse des retraités.
-        </p>
-        <p>
-        La suspension et/ou l’aménagement temporaire de ces actions, corroborés aux obligations de confinement
-        puis, post-confinement, de distanciation physique, induisent un risque d’accroissement de l’isolement
-        social des personnes âgées et de non-détection de fragilités.
-        </p>
-        <p>
-        L’Assurance Retraite a par conséquent décidé de relancer le dispositif d’appels sortants de maintien du
-        lien social et de réassurance vers les personnes âgées en période épidémique, mis en place lors du premier
-        confinement au printemps 2020, et permettant de maintenir le lien social, de rassurer, d’orienter,
-        le cas échéant, les retraités vers les interlocuteurs compétents en cas de risque de rupture de droits,
-        de situation de détresse avérée ou de problème de santé.
-        </p>
+      <div class="rf-grid-row rf-grid-row--center">
+        <img src="/static/images/organisations/logo-cnav-fullscreen.png" title="Logo CNAV" style="max-height: 250px;">
       </div>
-      <div id="mission-description-activities">
-        <h2>Mission/Activités</h2>
-        <p>Le(a) candidat(e) retenu(e) assurera les missions suivantes :</p>
-        <ul>
-          <li>
-            Appeler les personnes âgées suivies par la CNAV pour maintenir le lien social avec celles-ci.
-          </li>
-          <li>
-            Ecouter et d’accueillir leurs inquiétudes, et ainsi engager leur apaisement et leur réassurance dans un contexte pouvant générer certaines angoisses.
-          </li>
-          <li>
-           Mettre en place, le cas échéant, une orientation de seconde niveau :
-               <ul>
-                  <li>en cas de rupture ou de risque de rupture de droits. </li>
-                  <li>en cas de situation de détresse avérée. </li>
-                  <li>pour relayer vers des partenaires proposant des solutions d’écoute complémentaires ou des activités de prévention au service du bien vieillir.</li>
-                  <li>en cas de problème de santé et/ou de détresse inviter à contacter le médecin traitant. </li>
-               </ul>
-          </li>
-        </ul>
-      </div>
-      <div id="mission-description-skills">
-        <h2>Aptitudes</h2>
-        <p>
-        Les aptitudes indiquées ont été associées à des verbatims de volontaires ayant expérimenté le dispositif
-        d’appels sortants à la Cnav, dans le but d’illustrer concrètement ces savoir-être.
-        </p>
-        <div>
-          <h3>Engagement et sens du service public</h3>
-          <p>
-          Offrir ses services par dévouement, parce que motivé par la
-              démarche d’entraide solidaire que permet ce nouveau dispositif d’appels sortants.
-          </p>
-          <ul>
-            <li>
-             « la chose principale c’est d’avoir envie de passer ces appels sortants, de la même manière qu’on le ferait lorsqu’on appelle un membre de sa propre famille »
-            </li>
-            <li>
-            « il faut vraiment faire ces appels sortants si on en a envie »
-            </li>
-           </ul>
+      <div>
+        <div id="mission-title">
+          <h1>
+            <%= missionTitle %>
+          </h1>
         </div>
-        <div>
-          <h3>Empathie raisonnée</h3>
-          <p>
-          Comprendre la réalité de la personne âgée afin de lui apporter une écoute et un soutien adaptés à sa situation
-          <ul>
-            <li>
-              « il faut se mettre à leur place car certains sont très loquaces, et d’autres ont moins envie de parler »
-            </li>
-            <li>
-            « c’est un public âgé alors il faut ressentir les choses à travers l’intonation de la voix de la personne, les mots qu’elle utilise »
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Ecoute active</h3>
-          <p>
-          Aptitude à questionner, à reformuler, et à s’intéresser à la personne
-          pour identifier ses éventuelles difficultés (isolement…), ses éventuels besoins,
-          ainsi que pour proposer le cas échéant, un relais de second niveau.
-          </p>
-        </div>
-        <div>
-          <h3>Communication</h3>
-          <p>
-          Savoir être clair, aptitude à favoriser l’expression de la personne âgée afin de créer du lien.
-          </p>
-          <ul>
-          <li>« Il faut être patient, dans l’écoute, il faut parfois répéter plusieurs fois ce qu’on dit car la personne peut être sourde,
-          ou bien il faut parler lentement »
-          </li>
-          <li>« Avant tout, il faut aimer communiquer avec les gens, être positif, chaleureux dans la voix »
-          </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Adaptabilité</h3>
-          <p>
-          Savoir ajuster son propos en fonction de chaque personne âgée, selon sa situation, sa réaction, sa réponse.
-          </p>
-          <ul>
-          <li>« il ne faut pas être dans le forcing et dérouler coute que coute les questions dans l’ordre du script »</li>
-          <li>« il est important d’être souple et s’adapter en fonction de la personne que nous avons au bout du fil »</li>
-          </li>
-          </ul>
-        </div>
-      </div>
-      <div id="mission-description-training">
-        <h2>Formation et kit d'accompagnement</h2>
-        <p>Les appelants seront accompagnés dans leur démarche à travers notamment une fiche « Conseils et recommandations aux appelants »,
-        un script de l’appel, qui constitue la trame à suivre, ainsi qu’un fichier excel de suivi.</p>
-        <p>Un webinaire pourra être proposé afin de se familiariser avec les outils du dispositif.</p>
-      </div>
-      <div id="mission-description-specific-conditions">
-        <h2>Prérequis et conditions</h2>
-          <div>
-          <h3>Disponibilité</h3>
-          <p>
-          La mission requiert une disponibilité d’au moins 2 jours par semaine,
-          afin d’assurer une montée en compétence, une aisance dans la mission et une certaine continuité.
-          </p>
-         </div>
-         <div>
-          <h3>Equipement nécessaire</h3>
-          <p>
-          Cette mise à disposition peut avoir lieu si l’agent public dispose, à titre professionnel ou personnel :
-          </p>
-          <ul>
-          <li>d’un téléphone avec forfait illimité et option « appel masqué » pour contacter les personnes âgées </li>
-          <li>d’une tablette, ou d’un ordinateur (PC ou Mac) idéalement, pour notamment
-          recevoir le listing des personnes à contacter, et renseigner le tableau de suivi </li>
-          <li>d’une connexion internet pour les raisons évoquées ci-dessus, ainsi que pour suivre,
-          le cas échéant, les webinaires d’accompagnement</li>
-          </ul>
-         </div>
-          <div>
-          <h3>Conditions</h3>
-        <ul>
-          <li>Type de contrat : mise à disposition</li>
-          <li>Durée : 1 mois renouvelable</li>
-          <li>Localisation : télétravail </li>
-        </ul>
-        <p>
-          Pour pouvoir être mis à disposition, vous devez être un agent public
-          titulaire ou bien en CDI dans une administration d'Etat.
-        </p>
         <%- include('partials/mission-summary-CNAV') -%>
+          <div id="mission-description">
+            <div id="mission-description-context">
+              <h2>Contexte</h2>
+              <p>
+                Face à l’épidémie de COVID-19, les pouvoirs publics redoublent d’attention vers les personnes âgées,
+                d’autant plus fragiles, puisque leurs accompagnements et liens sociaux habituels sont durablement
+                fragilisés.
+              </p>
+              <p>
+                Au regard du contexte sanitaire inédit, de l’âge et de la fragilité des bénéficiaires
+                de la politique d’action sociale de l’Assurance retraite, la Direction nationale de l’action
+                sociale a décidé de suspendre à titre temporaire les actions collectives de prévention
+                (ateliers prévention, actions collectives de lien social, conférences, salons, réunions collectives)
+                en maintenant les interventions des aides à domicile, des structures d’évaluation et des prestataires
+                habitat au domicile des retraités, sous réserve de la capacité des structures à mettre en œuvre les
+                préconisations sanitaires permettant de protéger la santé de leurs salariés et des retraités et en
+                recueillant l’accord expresse des retraités.
+              </p>
+              <p>
+                La suspension et/ou l’aménagement temporaire de ces actions, corroborés aux obligations de confinement
+                puis, post-confinement, de distanciation physique, induisent un risque d’accroissement de l’isolement
+                social des personnes âgées et de non-détection de fragilités.
+              </p>
+              <p>
+                L’Assurance Retraite a par conséquent décidé de relancer le dispositif d’appels sortants de maintien du
+                lien social et de réassurance vers les personnes âgées en période épidémique, mis en place lors du
+                premier
+                confinement au printemps 2020, et permettant de maintenir le lien social, de rassurer, d’orienter,
+                le cas échéant, les retraités vers les interlocuteurs compétents en cas de risque de rupture de droits,
+                de situation de détresse avérée ou de problème de santé.
+              </p>
+            </div>
+            <div id="mission-description-activities">
+              <h2>Mission/Activités</h2>
+              <p>Le(a) candidat(e) retenu(e) assurera les missions suivantes :</p>
+              <ul>
+                <li>
+                  Appeler les personnes âgées suivies par la CNAV pour maintenir le lien social avec celles-ci.
+                </li>
+                <li>
+                  Ecouter et d’accueillir leurs inquiétudes, et ainsi engager leur apaisement et leur réassurance dans
+                  un contexte pouvant générer certaines angoisses.
+                </li>
+                <li>
+                  Mettre en place, le cas échéant, une orientation de seconde niveau :
+                  <ul>
+                    <li>en cas de rupture ou de risque de rupture de droits. </li>
+                    <li>en cas de situation de détresse avérée. </li>
+                    <li>pour relayer vers des partenaires proposant des solutions d’écoute complémentaires ou des
+                      activités de prévention au service du bien vieillir.</li>
+                    <li>en cas de problème de santé et/ou de détresse inviter à contacter le médecin traitant. </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div id="mission-description-skills">
+              <h2>Aptitudes</h2>
+              <p>
+                Les aptitudes indiquées ont été associées à des verbatims de volontaires ayant expérimenté le dispositif
+                d’appels sortants à la Cnav, dans le but d’illustrer concrètement ces savoir-être.
+              </p>
+              <div>
+                <h3>Engagement et sens du service public</h3>
+                <p>
+                  Offrir ses services par dévouement, parce que motivé par la
+                  démarche d’entraide solidaire que permet ce nouveau dispositif d’appels sortants.
+                </p>
+                <ul>
+                  <li>
+                    « la chose principale c’est d’avoir envie de passer ces appels sortants, de la même manière qu’on le
+                    ferait lorsqu’on appelle un membre de sa propre famille »
+                  </li>
+                  <li>
+                    « il faut vraiment faire ces appels sortants si on en a envie »
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>Empathie raisonnée</h3>
+                <p>
+                  Comprendre la réalité de la personne âgée afin de lui apporter une écoute et un soutien adaptés à sa
+                  situation
+                <ul>
+                  <li>
+                    « il faut se mettre à leur place car certains sont très loquaces, et d’autres ont moins envie de
+                    parler »
+                  </li>
+                  <li>
+                    « c’est un public âgé alors il faut ressentir les choses à travers l’intonation de la voix de la
+                    personne, les mots qu’elle utilise »
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>Ecoute active</h3>
+                <p>
+                  Aptitude à questionner, à reformuler, et à s’intéresser à la personne
+                  pour identifier ses éventuelles difficultés (isolement…), ses éventuels besoins,
+                  ainsi que pour proposer le cas échéant, un relais de second niveau.
+                </p>
+              </div>
+              <div>
+                <h3>Communication</h3>
+                <p>
+                  Savoir être clair, aptitude à favoriser l’expression de la personne âgée afin de créer du lien.
+                </p>
+                <ul>
+                  <li>« Il faut être patient, dans l’écoute, il faut parfois répéter plusieurs fois ce qu’on dit car la
+                    personne peut être sourde,
+                    ou bien il faut parler lentement »
+                  </li>
+                  <li>« Avant tout, il faut aimer communiquer avec les gens, être positif, chaleureux dans la voix »
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>Adaptabilité</h3>
+                <p>
+                  Savoir ajuster son propos en fonction de chaque personne âgée, selon sa situation, sa réaction, sa
+                  réponse.
+                </p>
+                <ul>
+                  <li>« il ne faut pas être dans le forcing et dérouler coute que coute les questions dans l’ordre du
+                    script »</li>
+                  <li>« il est important d’être souple et s’adapter en fonction de la personne que nous avons au bout du
+                    fil »</li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="mission-description-training">
+              <h2>Formation et kit d'accompagnement</h2>
+              <p>Les appelants seront accompagnés dans leur démarche à travers notamment une fiche « Conseils et
+                recommandations aux appelants »,
+                un script de l’appel, qui constitue la trame à suivre, ainsi qu’un fichier excel de suivi.</p>
+              <p>Un webinaire pourra être proposé afin de se familiariser avec les outils du dispositif.</p>
+            </div>
+            <div id="mission-description-specific-conditions">
+              <h2>Prérequis et conditions</h2>
+              <div>
+                <h3>Disponibilité</h3>
+                <p>
+                  La mission requiert une disponibilité d’au moins 2 jours par semaine,
+                  afin d’assurer une montée en compétence, une aisance dans la mission et une certaine continuité.
+                </p>
+              </div>
+              <div>
+                <h3>Equipement nécessaire</h3>
+                <p>
+                  Cette mise à disposition peut avoir lieu si l’agent public dispose, à titre professionnel ou personnel
+                  :
+                </p>
+                <ul>
+                  <li>d’un téléphone avec forfait illimité et option « appel masqué » pour contacter les personnes âgées
+                  </li>
+                  <li>d’une tablette, ou d’un ordinateur (PC ou Mac) idéalement, pour notamment
+                    recevoir le listing des personnes à contacter, et renseigner le tableau de suivi </li>
+                  <li>d’une connexion internet pour les raisons évoquées ci-dessus, ainsi que pour suivre,
+                    le cas échéant, les webinaires d’accompagnement</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Conditions</h3>
+                <ul>
+                  <li>Type de contrat : mise à disposition</li>
+                  <li>Durée : 1 mois renouvelable</li>
+                  <li>Localisation : télétravail </li>
+                </ul>
+                <p>
+                  Pour pouvoir être mis à disposition, vous devez être un agent public
+                  titulaire ou bien en CDI dans une administration d'Etat.
+                </p>
+                <%- include('partials/mission-summary-CNAV') -%>
+              </div>
+            </div>
+            <div id="postuler" class="rf-mb-5w">
+              <%- include('partials/apply') -%>
+            </div>
+          </div>
       </div>
-    </div>
-    <div id="postuler" class="rf-mb-5w">
-      <%- include('partials/apply') -%>
-    </div>
-  </div>
-</div>
-<%- include('partials/footer') -%>
+
+      <div class="rf-callout">
+        <div class="rf-callout__text">
+          <div class="rf-container">
+            <div class="rf-grid-row rf-grid-row--gutters rf-grid-row--center rf-grid-row--middle ">
+              <div class="rf-col" style="text-align: left">
+                <div class="rf-mb-4w rf-mb-md-0">
+                  Vous avez des questions sur cette mission? Contactez la CNAV à
+                  <span class="rf-mx-1v">
+                    <b>
+                      <%= contactEmail %>
+                    </b>
+                  </span>
+                </div>
+                <a title="Contactez-nous" href="<%= makeMailto(contactEmail, 'Bonjour !') %>" target="_blank"
+                  rel="noopener noreferrer" class="rf-btn rf-btn--secondary btn--secondary--temporary-fix rf-text--lg">
+                  Contactez-nous
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <%- include('partials/footer') -%>
