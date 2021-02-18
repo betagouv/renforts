@@ -151,6 +151,34 @@
         </div>
         <div id="postuler" class="rf-mb-5w">
           <%- include('partials/apply') -%>
+
+
+        </div>
+        <div class="rf-callout">
+          <div class="rf-callout__text">
+            <div class="rf-container">
+              <div class="rf-grid-row rf-grid-row--gutters rf-grid-row--center rf-grid-row--middle ">
+                <div class="rf-col" style="text-align: left">
+                  <div class="rf-mb-4w rf-mb-md-0">
+                    Vous avez des questions sur cette mission ? Contactez la CPAM à
+                    <span class="rf-mx-1v">
+                      <b>
+                        <%= contactCPAMEmail %>
+                      </b>
+                    </span>
+                  </div>
+                  <a title="Contactez-nous" href="<%= makeMailto(contactCPAMEmail, 'Bonjour !') %>" target="_blank"
+                    rel="noopener noreferrer"
+                    class="rf-btn rf-btn--secondary btn--secondary--temporary-fix rf-text--lg">
+                    Contactez-nous
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
   </div>
+
+
   <%- include('partials/footer') -%>
