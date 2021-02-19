@@ -85,7 +85,7 @@ Bonne journée,
   })
 })
 
-app.get("/mission-sante", (req, res) => {
+app.get("/mission-sante/:id", (req, res) => {
   const missionTitle = "Missions santé"
   const subject = `Je postule à la mission ${missionTitle}`
   const body = `Bonjour,
@@ -96,6 +96,18 @@ Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire
 
 Bonne journée,
 `
+  let i = 0;
+  let offre = null;
+
+  console.log(req.params.id)
+  content.offres.forEach(function (_offre) {
+    console.log(_offre.id)
+    if (_offre.id == req.params.id) {
+      offre = _offre;
+
+    }
+    i++;
+  });
 
   const applyLink = process.env.APPLY_URL_SANTE
     ? process.env.APPLY_URL_SANTE
@@ -109,7 +121,7 @@ Bonne journée,
     missionTitle,
     applyLink,
     makeMailto,
-    content
+    offre
   })
 
 
