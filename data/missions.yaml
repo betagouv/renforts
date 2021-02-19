@@ -1,8 +1,8 @@
 offres:
   - titre: Cadre spécialisé en marchés publics
     id: cellule-de-crise-cadre-specialise-en-marches-publics
-    petit-logo: logo-sante-card.png
-    grand-logo: logo-sante-fullscreen.png
+    petitLogo: logo-sante-card.png
+    grandLogo: logo-sante-fullscreen.png
     contexte: |
         Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. 
         Le ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. 
@@ -59,12 +59,12 @@ offres:
       contrat: Mise à disposition
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
-    email-contact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    url-postuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
+    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
   - titre: Communicants (profil attachée de presse)
     id: cellule-de-crise-communicants
-    petit-logo: logo-sante-card.png
-    grand-logo: logo-sante-fullscreen.png
+    petitLogo: logo-sante-card.png
+    grandLogo: logo-sante-fullscreen.png
     contexte: |
         Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. 
         Le ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. 
@@ -122,12 +122,12 @@ offres:
       contrat: Mise à disposition
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
-    email-contact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    url-postuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
+    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
   - titre: Secretariat
     id: cellule-de-crise-secretariat
-    petit-logo: logo-sante-card.png
-    grand-logo: logo-sante-fullscreen.png
+    petitLogo: logo-sante-card.png
+    grandLogo: logo-sante-fullscreen.png
     contexte: |
         Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. 
         Le ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. 
@@ -183,12 +183,12 @@ offres:
       contrat: Mise à disposition
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
-    email-contact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    url-postuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
+    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
   - titre: Logisticiens, Approvisionnements et gestion de stocks - Transports et transits
     id: cellule-de-crise-logisticiens
-    petit-logo: logo-sante-card.png
-    grand-logo: logo-sante-fullscreen.png
+    petitLogo: logo-sante-card.png
+    grandLogo: logo-sante-fullscreen.png
     contexte: |
         Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. 
         Le ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. 
@@ -226,12 +226,12 @@ offres:
       contrat: Mise à disposition
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
-    email-contact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    url-postuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
+    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
   - titre: Gestionnaire de ressources humaines
     id: cellule-gestionnaire-rh
-    petit-logo: logo-sante-card.png
-    grand-logo: logo-sante-fullscreen.png
+    petitLogo: logo-sante-card.png
+    grandLogo: logo-sante-fullscreen.png
     contexte: |
         Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. 
         Le ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. 
@@ -268,12 +268,12 @@ offres:
       contrat: Mise à disposition
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
-    email-contact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    url-postuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer 
+    emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
+    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer 
   - titre: Gestionnaire logistique
     id: cellule-gestionnaire-logistique
-    petit-logo: logo-sante-card.png
-    grand-logo: logo-sante-fullscreen.png
+    petitLogo: logo-sante-card.png
+    grandLogo: logo-sante-fullscreen.png
     contexte: |
         Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. 
         Le ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. 
@@ -310,5 +310,5 @@ offres:
       contrat: Mise à disposition
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
-    email-contact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    url-postuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
+    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
