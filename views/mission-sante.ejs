@@ -1,9 +1,15 @@
 <%- include('partials/header') -%>
-  <ul>
-    <% content.offres.forEach(function(offre) { %>
-      <li><strong>
-          <%= offre.titre %>
-        </strong></li>
-      <% }); %>
-  </ul>
+  <div class="rf-container">
+    <%- include('partials/breadcrumbs', { items: [ { label: 'Accueil' , url: '/' }, { label: missionTitle }, ], } ) -%>
+
+
+      <% content.offres.forEach(function(offre) { %>
+        <div id="mission-title">
+          <h1>
+            <%= offre.titre %>
+          </h1>
+        </div>
+        <% }); %>
+
+  </div>
   <%- include('partials/footer') -%>
