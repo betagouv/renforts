@@ -9,6 +9,44 @@
             <%= offre.titre %>
           </h1>
         </div>
+        <div id="mission-description">
+          <div id="mission-description-context">
+            <h2>Contexte</h2>
+            <p>
+              <%=offre.contexte%>
+            </p>
+          </div>
+          <div id="mission-description-activities">
+            <h2>Mission/Activités</h2>
+            <p>
+            <ul>
+              <% offre.missions.forEach(function(mission) { %>
+                <li>
+                  <%=mission%>
+                </li>
+                <% }); %>
+            </ul>
+            </p>
+          </div>
+          <div id="mission-description-activities">
+            <h2>Aptitudes</h2>
+            <% offre.aptitudes.forEach(function(aptitude) { %>
+              <p>
+              <h3>
+                <%=aptitude.titre%>
+              </h3>
+              <ul>
+                <% aptitude.liste.forEach(function(option) { %>
+                  <li>
+                    <%=option%>
+                  </li>
+                  <% }); %>
+              </ul>
+
+              </p>
+              <% }); %>
+          </div>
+        </div>
         <% }); %>
 
   </div>
