@@ -3,96 +3,96 @@
     <%- include('partials/breadcrumbs', { items: [ { label: 'Accueil' , url: '/' }, { label: missionTitle }, ], } ) -%>
 
 
-      <% content.offres.forEach(function(offre) { %>
-        <div id="mission-title">
-          <h1>
-            <%= offre.titre %>
-          </h1>
+      <!-- content.offres.forEach(function(offre) { -->
+      <div id="mission-title">
+        <h1>
+          <%= offre.titre %>
+        </h1>
+      </div>
+      <div id="mission-description">
+        <div id="mission-description-context">
+          <h2>Contexte</h2>
+          <p>
+            <%=offre.contexte%>
+          </p>
         </div>
-        <div id="mission-description">
-          <div id="mission-description-context">
-            <h2>Contexte</h2>
+        <div id="mission-description-activities">
+          <h2>Mission/Activités</h2>
+          <p>
+          <ul>
+            <% offre.missions.forEach(function(mission) { %>
+              <li>
+                <%=mission%>
+              </li>
+              <% }); %>
+          </ul>
+          </p>
+        </div>
+        <div id="mission-description-aptitudes">
+          <h2>Aptitudes</h2>
+          <% offre.aptitudes.forEach(function(aptitude) { %>
             <p>
-              <%=offre.contexte%>
-            </p>
-          </div>
-          <div id="mission-description-activities">
-            <h2>Mission/Activités</h2>
-            <p>
+            <h3>
+              <%=aptitude.titre%>
+            </h3>
             <ul>
-              <% offre.missions.forEach(function(mission) { %>
+              <% aptitude.liste.forEach(function(option) { %>
                 <li>
-                  <%=mission%>
+                  <%=option%>
                 </li>
                 <% }); %>
             </ul>
-            </p>
-          </div>
-          <div id="mission-description-aptitudes">
-            <h2>Aptitudes</h2>
-            <% offre.aptitudes.forEach(function(aptitude) { %>
-              <p>
-              <h3>
-                <%=aptitude.titre%>
-              </h3>
-              <ul>
-                <% aptitude.liste.forEach(function(option) { %>
-                  <li>
-                    <%=option%>
-                  </li>
-                  <% }); %>
-              </ul>
-
-              </p>
-              <% }); %>
-          </div>
-          <div id="mission-description-formation">
-            <h2>Formation</h2>
-            <p>
-              <%=offre.formation%>
-            </p>
-          </div>
-
-          <div id="mission-description-prerequis">
-            <h2>Pré-requis</h2>
-            <% offre.prerequis.forEach(function(prerequi) { %>
-              <p>
-              <h3>
-                <%=prerequi.titre%>
-              </h3>
-              <ul>
-                <% prerequi.liste.forEach(function(option) { %>
-                  <li>
-                    <%=option%>
-                  </li>
-                  <% }); %>
-              </ul>
-
-              </p>
-              <% }); %>
-          </div>
-          <div id="mission-description-conditions">
-            <h2>Conditions</h2>
-            <h3>Contrat</h3>
-            <p>
-              <%=offre.conditions.contrat%>
 
             </p>
-            <h3>Durée</h3>
-            <p>
-              <%=offre.conditions.duree%>
-            </p>
-            <h3>Localisation</h3>
-            <p>
-              <%=offre.conditions.localisation%>
-            </p>
-          </div>
-          <a class="rf-btn rf-btn--secondary btn--secondary--temporary-fix" href="mailto:<%=offre.email %>"
-            target="_blank" rel="noopener noreferrer">
-            Renseignements
-          </a>
+            <% }); %>
         </div>
-        <% }); %>
+        <div id="mission-description-formation">
+          <h2>Formation</h2>
+          <p>
+            <%=offre.formation%>
+          </p>
+        </div>
+
+        <div id="mission-description-prerequis">
+          <h2>Pré-requis</h2>
+          <% offre.prerequis.forEach(function(prerequi) { %>
+            <p>
+            <h3>
+              <%=prerequi.titre%>
+            </h3>
+            <ul>
+              <% prerequi.liste.forEach(function(option) { %>
+                <li>
+                  <%=option%>
+                </li>
+                <% }); %>
+            </ul>
+
+            </p>
+            <% }); %>
+        </div>
+        <div id="mission-description-conditions">
+          <h2>Conditions</h2>
+          <h3>Contrat</h3>
+          <p>
+            <%=offre.conditions.contrat%>
+
+          </p>
+          <h3>Durée</h3>
+          <p>
+            <%=offre.conditions.duree%>
+          </p>
+          <h3>Localisation</h3>
+          <p>
+            <%=offre.conditions.localisation%>
+          </p>
+        </div>
+        <a class="rf-btn rf-btn--secondary btn--secondary--temporary-fix" href="mailto:<%=offre.email %>"
+          target="_blank" rel="noopener noreferrer">
+          Renseignements
+        </a>
+      </div>
+      <!-- }); -->
 
   </div>
   <%- include('partials/footer') -%>
