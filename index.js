@@ -1,5 +1,6 @@
 const express = require("express")
 const path = require("path")
+const fs = require("fs")
 
 require("dotenv").config()
 
@@ -80,6 +81,39 @@ Bonne journée,
     applyLink,
     makeMailto,
   })
+})
+
+app.get("/mission-sante", (req, res) => {
+  const missionTitle = "Missions santé"
+  const subject = `Je postule à la mission ${missionTitle}`
+  const body = `Bonjour,
+
+Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire plus ?
+
+[Des questions ? Vous voulez vous présenter ? Ecrivez ce que vous voulez !]
+
+Bonne journée,
+`
+
+  const applyLink = process.env.APPLY_URL_SANTE
+    ? process.env.APPLY_URL_SANTE
+    : makeMailto(subject, body)
+
+  const content = JSON.parse('./data/missions.json');
+
+
+  res.render("mission-sante", {
+    withApplyButton: true,
+    missionTitle,
+    applyLink,
+    makeMailto,
+    content
+  })
+
+
+
+
+
 })
 
 app.get("/mentions-legales", (req, res) => {
