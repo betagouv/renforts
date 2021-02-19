@@ -28,7 +28,7 @@
             </ul>
             </p>
           </div>
-          <div id="mission-description-activities">
+          <div id="mission-description-aptitudes">
             <h2>Aptitudes</h2>
             <% offre.aptitudes.forEach(function(aptitude) { %>
               <p>
@@ -46,6 +46,51 @@
               </p>
               <% }); %>
           </div>
+          <div id="mission-description-formation">
+            <h2>Formation</h2>
+            <p>
+              <%=offre.formation%>
+            </p>
+          </div>
+
+          <div id="mission-description-prerequis">
+            <h2>Pré-requis</h2>
+            <% offre.prerequis.forEach(function(prerequi) { %>
+              <p>
+              <h3>
+                <%=prerequi.titre%>
+              </h3>
+              <ul>
+                <% prerequi.liste.forEach(function(option) { %>
+                  <li>
+                    <%=option%>
+                  </li>
+                  <% }); %>
+              </ul>
+
+              </p>
+              <% }); %>
+          </div>
+          <div id="mission-description-conditions">
+            <h2>Conditions</h2>
+            <h3>Contrat</h3>
+            <p>
+              <%=offre.conditions.contrat%>
+
+            </p>
+            <h3>Durée</h3>
+            <p>
+              <%=offre.conditions.duree%>
+            </p>
+            <h3>Localisation</h3>
+            <p>
+              <%=offre.conditions.localisation%>
+            </p>
+          </div>
+          <a class="rf-btn rf-btn--secondary btn--secondary--temporary-fix" href="mailto:<%=offre.email %>"
+            target="_blank" rel="noopener noreferrer">
+            Renseignements
+          </a>
         </div>
         <% }); %>
 
