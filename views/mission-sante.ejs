@@ -1,0 +1,9 @@
+<%- include('partials/header') -%>
+  <ul>
+    <% content.offres.forEach(function(offre) { %>
+      <li><strong>
+          <%= offre.titre %>
+        </strong></li>
+      <% }); %>
+  </ul>
+  <%- include('partials/footer') -%>
