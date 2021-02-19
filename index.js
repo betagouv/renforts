@@ -3,6 +3,7 @@ const path = require("path")
 const fs = require("fs")
 
 require("dotenv").config()
+const content = require('./data/missions.json');
 
 const { contactEmail, contactCPAMEmail, makeMailto } = require("./utils/mail")
 
@@ -100,7 +101,7 @@ Bonne journée,
     ? process.env.APPLY_URL_SANTE
     : makeMailto(subject, body)
 
-  const content = JSON.parse('./data/missions.json');
+  //  const content = JSON.parse('./data/missions.json');
 
 
   res.render("mission-sante", {
