@@ -84,7 +84,7 @@ Bonne journée,
   })
 })
 
-app.get("/mission-sante/:id", (req, res) => {
+app.get("/missions/:id", (req, res) => {
   const missionTitle = "Missions santé"
   const subject = `Je postule à la mission ${missionTitle}`
   const body = `Bonjour,
