@@ -96,7 +96,10 @@
             <div class="rf-grid-row">
               <div class="rf-col">
                 <button id="apply-button" title="Postuler" class="rf-btn">
-                  Bientôt Postuler
+                  <a title="Postuler" href="<%= makeMailto(offre.emailContact, 'Bonjour !') %>" target="_blank"
+                    rel="noopener noreferrer">
+                    Bientôt Postuler
+                  </a>
                 </button>
 
               </div>
