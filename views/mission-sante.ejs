@@ -13,71 +13,72 @@
           <%= offre.titre %>
         </h1>
       </div>
-      <div id="mission-description">
-        <div id="mission-description-context">
-          <h2>Contexte</h2>
-          <p>
-            <%=offre.contexte%>
-          </p>
-        </div>
-        <div id="mission-description-activities">
-          <h2>Mission/Activités</h2>
-          <p>
-          <ul>
-            <% offre.missions.forEach(function(mission) { %>
-              <li>
-                <%=mission%>
-              </li>
+      <%- include('partials/mission-summary-sante', {offre: offre}) %>
+        <div id="mission-description">
+          <div id="mission-description-context">
+            <h2>Contexte</h2>
+            <p>
+              <%=offre.contexte%>
+            </p>
+          </div>
+          <div id="mission-description-activities">
+            <h2>Mission/Activités</h2>
+            <p>
+            <ul>
+              <% offre.missions.forEach(function(mission) { %>
+                <li>
+                  <%=mission%>
+                </li>
+                <% }); %>
+            </ul>
+            </p>
+          </div>
+          <div id="mission-description-aptitudes">
+            <h2>Aptitudes</h2>
+            <% offre.aptitudes.forEach(function(aptitude) { %>
+              <p>
+              <h3>
+                <%=aptitude.titre%>
+              </h3>
+              <ul>
+                <% aptitude.liste.forEach(function(option) { %>
+                  <li>
+                    <%=option%>
+                  </li>
+                  <% }); %>
+              </ul>
+
+              </p>
               <% }); %>
-          </ul>
-          </p>
-        </div>
-        <div id="mission-description-aptitudes">
-          <h2>Aptitudes</h2>
-          <% offre.aptitudes.forEach(function(aptitude) { %>
+          </div>
+          <div id="mission-description-formation">
+            <h2>Formation</h2>
             <p>
-            <h3>
-              <%=aptitude.titre%>
-            </h3>
-            <ul>
-              <% aptitude.liste.forEach(function(option) { %>
-                <li>
-                  <%=option%>
-                </li>
-                <% }); %>
-            </ul>
-
+              <%=offre.formation%>
             </p>
-            <% }); %>
-        </div>
-        <div id="mission-description-formation">
-          <h2>Formation</h2>
-          <p>
-            <%=offre.formation%>
-          </p>
-        </div>
+          </div>
 
-        <div id="mission-description-prerequis">
-          <h2>Pré-requis</h2>
-          <% offre.prerequis.forEach(function(prerequi) { %>
-            <p>
-            <h3>
-              <%=prerequi.titre%>
-            </h3>
-            <ul>
-              <% prerequi.liste.forEach(function(option) { %>
-                <li>
-                  <%=option%>
-                </li>
-                <% }); %>
-            </ul>
+          <div id="mission-description-prerequis">
+            <h2>Pré-requis</h2>
+            <% offre.prerequis.forEach(function(prerequi) { %>
+              <p>
+              <h3>
+                <%=prerequi.titre%>
+              </h3>
+              <ul>
+                <% prerequi.liste.forEach(function(option) { %>
+                  <li>
+                    <%=option%>
+                  </li>
+                  <% }); %>
+              </ul>
 
-            </p>
-            <% }); %>
-        </div>
-        <div id="mission-description-conditions">
-          <h2>Conditions</h2>
-          <h3>Contrat</h3>
+              </p>
+              <% }); %>
+          </div>
+          <div id="mission-description-conditions">
+            <h2>Conditions</h2>
+            <!--h3>Contrat</h3>
           <p>
             <%=offre.conditions.contrat%>
 
@@ -89,51 +90,52 @@
           <h3>Localisation</h3>
           <p>
             <%=offre.conditions.localisation%>
-          </p>
-        </div>
-        <div id="postuler" class="rf-mb-5w">
-          <div id="apply-banner" class="rf-container rf-mt-4w">
-            <div class="rf-grid-row">
-              <div class="rf-col">
-                <button id="apply-button" title="Postuler" class="rf-btn">
-                  <a title="Postuler" href="<%= makeMailto(offre.emailContact, 'Bonjour !') %>" target="_blank"
-                    rel="noopener noreferrer">
-                    Postuler par email
-                  </a>
-                </button>
-
-              </div>
-            </div>
-
+          </p-->
+            <%- include('partials/mission-summary-sante', {offre: offre}) %>
           </div>
-        </div>
-        <div class="rf-callout">
-          <div class="rf-callout__text">
-            <div class="rf-container">
-              <div class="rf-grid-row rf-grid-row--gutters rf-grid-row--center rf-grid-row--middle ">
-                <div class="rf-col" style="text-align: left">
-                  <div class="rf-mb-4w rf-mb-md-0">
-                    Vous avez des questions sur cette mission? Contactez la cellule de crise
-                    <span class="rf-mx-1v">
-                      <b>
-                        <%= offre.emailContact %>
-                      </b>
-                    </span>
-                  </div>
-                  <a title="Contactez-nous" href="<%= makeMailto(offre.emailContact, 'Bonjour !') %>" target="_blank"
-                    rel="noopener noreferrer"
-                    class="rf-btn rf-btn--secondary btn--secondary--temporary-fix rf-text--lg">
-                    Contactez-nous
-                  </a>
+          <div id="postuler" class="rf-mb-5w">
+            <div id="apply-banner" class="rf-container rf-mt-4w">
+              <div class="rf-grid-row">
+                <div class="rf-col">
+                  <button id="apply-button" title="Postuler" class="rf-btn">
+                    <a title="Postuler" href="<%= makeMailto(offre.emailContact, 'Bonjour !') %>" target="_blank"
+                      rel="noopener noreferrer">
+                      Postuler par email
+                    </a>
+                  </button>
+
                 </div>
               </div>
 
             </div>
           </div>
-        </div>
+          <div class="rf-callout">
+            <div class="rf-callout__text">
+              <div class="rf-container">
+                <div class="rf-grid-row rf-grid-row--gutters rf-grid-row--center rf-grid-row--middle ">
+                  <div class="rf-col" style="text-align: left">
+                    <div class="rf-mb-4w rf-mb-md-0">
+                      Vous avez des questions sur cette mission? Contactez la cellule de crise
+                      <span class="rf-mx-1v">
+                        <b>
+                          <%= offre.emailContact %>
+                        </b>
+                      </span>
+                    </div>
+                    <a title="Contactez-nous" href="<%= makeMailto(offre.emailContact, 'Bonjour !') %>" target="_blank"
+                      rel="noopener noreferrer"
+                      class="rf-btn rf-btn--secondary btn--secondary--temporary-fix rf-text--lg">
+                      Contactez-nous
+                    </a>
+                  </div>
+                </div>
 
-      </div>
-      <!-- }); -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- }); -->
 
   </div>
   <%- include('partials/footer') -%>
