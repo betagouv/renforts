@@ -110,7 +110,6 @@ Bonne journée,
     ? process.env.APPLY_URL_SANTE
     : makeMailto(subject, body)
 
-  //  const content = JSON.parse('./data/missions.json');
 
 
   res.render("mission-sante", {
