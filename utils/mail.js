@@ -3,6 +3,11 @@ const contactEmail =
 
 exports.contactEmail = contactEmail
 
+const contactCNAVEmail =
+  process.env.contactEmail || "candidatureappelsortantassures@cnav.fr"
+
+exports.contactCNAVEmail = contactCNAVEmail
+
 const contactCPAMEmail =
   process.env.contactCPAMEmail || "contact-cpam@volontaires.fonction-publique.gouv.fr"
 

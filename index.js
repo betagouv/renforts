@@ -3,7 +3,7 @@ const path = require("path")
 
 require("dotenv").config()
 
-const { contactEmail, contactCPAMEmail, makeMailto } = require("./utils/mail")
+const { contactEmail, contactCNAVEmail, contactCPAMEmail, makeMailto } = require("./utils/mail")
 
 const appName = "volontaires.fonction-publique.gouv.fr"
 
@@ -73,7 +73,7 @@ Bonne journée,
 `
   const applyLink = process.env.APPLY_URL_CNAV
     ? process.env.APPLY_URL_CNAV
-    : makeMailto(contactEmail, subject, body)
+    : makeMailto(contactCNAVEmail, subject, body)
 
   res.render("mission-CNAV", {
     withApplyButton: true,
