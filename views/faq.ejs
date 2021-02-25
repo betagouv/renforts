@@ -257,12 +257,13 @@
             </div>
             <div class="faq-question">
                <h3>Vous ne trouvez pas l'info que vous cherchez sur le site ?</h3>
-               Contactez-nous sur <b> <%= contactEmail %> </b>
-                 <a title="Contactez-nous" href="<%= makeMailto(contactEmail, 'Bonjour !') %>"
+               <p>Contactez-nous sur <b> <%= contactEmail %> </b>
+               </p>
+               <a title="Contactez-nous" href="<%= makeMailto(contactEmail, 'Bonjour !') %>"
                                 target="_blank" rel="noopener noreferrer"
                                 class="rf-btn rf-btn--secondary btn--secondary--temporary-fix rf-text--lg">
                                 Contactez-nous
-                            </a>
+               </a>
             </div>
     </div>
     <%- include('partials/footer') -%>
