@@ -5,9 +5,9 @@
       "id": "cellule-de-crise-cadre-specialise-en-marches-publics",
       "petitLogo": "logo-sante-card.png",
       "grandLogo": "logo-sante-fullscreen.png",
-      "contexte": "Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. \nLe ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. \nA ce titre, le ministère a engagé un pilotage fin de ressources humaines dans un fonctionnement 7 jours sur 7, 24 h sur 24h. \nEn ce sens, le ministère fait appel à la solidarité interministérielle pour venir renforcer le dispositif sur des métiers en tension au regard du flux d'entrée et de sorties des agents participants aux différentes cellules de crises. \nL'objectif est de conforter l'effort national en cours dans la lutte contre le développement de la maladie et de déployer l'ensemble du dispositif vaccinal.\n",
+      "contexte": "Le ministère de la santé et des solidarités est mobilisé depuis plus d'un an dans la gestion d'une crise sanitaire sans précédent. \nPour faire face à l'épidémie de Covid 19, il s'est doté de structures dédiées (cabinet COVID, task Force vaccination, direction de communication de crise, centre de crise sanitaire...) dont la plupart fonctionnent grâce à des agents mis à disposition en interne (MSS + IGAS). Certains de ces agents ont besoin de relève après plusieurs mois de mobilisation et l'organisation est confrontée à des besoins qu'elle ne parvient pas à honorer en interne. Ces besoins concernent le coeur de gestion de crise comme des fonctions support tout aussi essentielles pour permettre au ministère d'assurer la continuité de son action dans un contexte de mobilisation soutenue sur le long terme.\n",
       "missions": [
-        "Conception, formalisation et passation de marchés publicsliés à la crise. Conception de marchés-cadres sur des besoins nouveaux apparus dans le cadre de la crise.",
+        "Conception, formalisation et passation de marchés publics liés à la crise. Conception de marchés-cadres sur des besoins nouveaux apparus dans le cadre de la crise.",
         "Suivi d'execution de ces marchés.",
         "Appui juridique sur la realisation de marchés et autres formats de partenariats."
       ],
@@ -19,15 +19,23 @@
           ]
         },
         {
-          "titre": "Empathie raisonnée",
+          "titre": "Intervention dans un contexte de crise",
           "liste": [
-            "Capacité de travailler en équipe",
-            "Capacité de travailler dans une organisation de crise hiérarchisée",
+            "Réactivité et capacité d'initiative",
+            "Inventivité pour trouver des solutions dans l'urgence",
+            "Capacité de travailler en équipe dans une organisation hiérarchisée",
             "Capacité à être autonome sur ses fonctions",
-            "Capacité à rendre compte",
             "Discrétion",
-            "Réactivé",
             "Disponibilité"
+          ]
+        },
+        {
+          "titre": "Compétences métier",
+          "liste": [
+            "Bon niveau rédactionnel",
+            "Ecoute des besoins exprimés par les fonctionnels",
+            "Excellente connaissance du cadre réglementaire",
+            "Adaptabilité"
           ]
         },
         {
@@ -55,7 +63,7 @@
           ]
         }
       ],
-      "formation": "Le ministère met en place une procédure d'accueil des nouveaux arrivants.\nDes profils opérationnels et expérimentés sont attendus.\nChaque reponsable de pôle de la direction de crise sanitaire explicitera les attendus du poste et accomapagnera le nouvel arrivant sur ses fonctions.\nLe ministère met en place un appui en coaching et en management pour tous les encadrants de crises.\nDes mesures de soutiens humains sont mis en oeuvre (reconnaissance, temps de repos, sommeil...)\n",
+      "formation": "Les nouveaux arrivants sont accueillis individuellement par le service de soutien de proximité de la structure dont ils dépendent. \nUn circuit d'accueil et une présentation de l'organisation de crise leur sont proposés à leur arrivée.\nLa présentation du poste et des missions est assurée par le responsable de la structure puis les agents sont en général binomés avec un agent plus ancien à même de repondre à leurs interrogations.\nDes mesures de soutien humain renforcées adaptées au contexte de gestion de crise (cohésion d'équipe et solidarité entre agents renforcées, suivi médical et psychologique si besoin, amenagement de temps de repos...)  sont mis en oeuvre.\nLe ministère met en place en outre un appui en coaching et en management pour tous les encadrants de crises.\n",
       "prerequis": [
         {
           "titre": "Disponibilité",
@@ -72,6 +80,7 @@
         }
       ],
       "conditions": {
+        "equipement_necessaire": "Le ministère met à disposition des moyens matériels notamment informatiques. En fonction de l'organisation, les agents bénéficient de bureaux ou de site en open space pour les travaux en équipe. Des mesures de télétravail peuvent être envisagées selon les fonctions",
         "contrat": "Mise à disposition",
         "duree": "3 à 6 mois",
         "localisation": "Sur site à 14, avenue Duquesne, Paris 7ème"
@@ -84,7 +93,7 @@
       "id": "cellule-de-crise-communicants",
       "petitLogo": "logo-sante-card.png",
       "grandLogo": "logo-sante-fullscreen.png",
-      "contexte": "Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. \nLe ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. \nA ce titre, le ministère a engagé un pilotage fin de ressources humaines dans un fonctionnement 7 jours sur 7, 24 h sur 24h. \nEn ce sens, le ministère fait appel à la solidarité interministérielle pour venir renforcer le dispositif sur des métiers en tension au regard du flux d'entrée et de sorties des agents participants aux différentes cellules de crises. \nL'objectif est de conforter l'effort national en cours dans la lutte contre le développement de la maladie et de déployer l'ensemble du dispositif vaccinal.\n",
+      "contexte": "Le ministère de la santé et des solidarités est mobilisé depuis plus d'un an dans la gestion d'une crise sanitaire sans précédent. \nPour faire face à l'épidémie de Covid 19, il s'est doté de structures dédiées (cabinet COVID, task Force vaccination, direction de communication de crise, centre de crise sanitaire...) dont la plupart fonctionnent grâce à des agents mis à disposition en interne (MSS + IGAS). Certains de ces agents ont besoin de relève après plusieurs mois de mobilisation et l'organisation est confrontée à des besoins qu'elle ne parvient pas à honorer en interne. Ces besoins concernent le coeur de gestion de crise comme des fonctions support tout aussi essentielles pour permettre au ministère d'assurer la continuité de son action dans un contexte de mobilisation soutenue sur le long terme.\n",
       "missions": [
         "Profil Attachée de presse expérimenté",
         "Compétences en matière de gestion de crises",
@@ -98,15 +107,25 @@
           ]
         },
         {
-          "titre": "Empathie raisonnée",
+          "titre": "Intervention dans un contexte de crise",
           "liste": [
-            "Capacité de travailler en équipe",
-            "Capacité de travailler dans une organisation de crise hiérarchisée",
+            "Réactivité et capacité d'initiative",
+            "Inventivité pour trouver des solutions dans l'urgence",
+            "Capacité de travailler en équipe dans une organisation hiérarchisée",
             "Capacité à être autonome sur ses fonctions",
-            "Capacité à rendre compte",
             "Discrétion",
-            "Réactivé",
             "Disponibilité"
+          ]
+        },
+        {
+          "titre": "Compétences métier",
+          "liste": [
+            "Bon niveau rédactionnel",
+            "Aisance orale",
+            "Capacité de synthèse",
+            "Compétences en communication de crise",
+            "Capacité à vulgariser du contenu scientifique ou complexe",
+            "Relations publiques maîtrisées"
           ]
         },
         {
@@ -134,7 +153,7 @@
           ]
         }
       ],
-      "formation": "Le ministère met en place une procédure d'accueil des nouveaux arrivants.\nDes profils opérationnels et expérimentés sont attendus.\nChaque reponsable de pôle de la direction de crise sanitaire explicitera les attendus du poste et accomapagnera le nouvel arrivant sur ses fonctions.\nLe ministère met en place un appui en coaching et en management pour tous les encadrants de crises.\nDes mesures de soutiens humains sont mis en oeuvre (reconnaissance, temps de repos, sommeil...)\n",
+      "formation": "Les nouveaux arrivants sont accueillis individuellement par le service de soutien de proximité de la structure dont ils dépendent. \nUn circuit d'accueil et une présentation de l'organisation de crise leur sont proposés à leur arrivée.\nLa présentation du poste et des missions est assurée par le responsable de la structure puis les agents sont en général binomés avec un agent plus ancien à même de repondre à leurs interrogations.\nDes mesures de soutien humain renforcées adaptées au contexte de gestion de crise (cohésion d'équipe et solidarité entre agents renforcées, suivi médical et psychologique si besoin, amenagement de temps de repos...)  sont mis en oeuvre.\nLe ministère met en place en outre un appui en coaching et en management pour tous les encadrants de crises.\n",
       "prerequis": [
         {
           "titre": "Disponibilité",
@@ -152,6 +171,7 @@
         }
       ],
       "conditions": {
+        "equipement_necessaire": "Le ministère met à disposition des moyens matériels notamment informatiques. En fonction de l'organisation, les agents bénéficient de bureaux ou de site en open space pour les travaux en équipe. Des mesures de télétravail peuvent être envisagées selon les fonctions",
         "contrat": "Mise à disposition",
         "duree": "3 à 6 mois",
         "localisation": "Sur site à 14, avenue Duquesne, Paris 7ème"
@@ -164,7 +184,7 @@
       "id": "cellule-de-crise-secretariat",
       "petitLogo": "logo-sante-card.png",
       "grandLogo": "logo-sante-fullscreen.png",
-      "contexte": "Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. \nLe ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. \nA ce titre, le ministère a engagé un pilotage fin de ressources humaines dans un fonctionnement 7 jours sur 7, 24 h sur 24h. \nEn ce sens, le ministère fait appel à la solidarité interministérielle pour venir renforcer le dispositif sur des métiers en tension au regard du flux d'entrée et de sorties des agents participants aux différentes cellules de crises. \nL'objectif est de conforter l'effort national en cours dans la lutte contre le développement de la maladie et de déployer l'ensemble du dispositif vaccinal.\n",
+      "contexte": "Le ministère de la santé et des solidarités est mobilisé depuis plus d'un an dans la gestion d'une crise sanitaire sans précédent. \nPour faire face à l'épidémie de Covid 19, il s'est doté de structures dédiées (cabinet COVID, task Force vaccination, direction de communication de crise, centre de crise sanitaire...) dont la plupart fonctionnent grâce à des agents mis à disposition en interne (MSS + IGAS). Certains de ces agents ont besoin de relève après plusieurs mois de mobilisation et l'organisation est confrontée à des besoins qu'elle ne parvient pas à honorer en interne. Ces besoins concernent le coeur de gestion de crise comme des fonctions support tout aussi essentielles pour permettre au ministère d'assurer la continuité de son action dans un contexte de mobilisation soutenue sur le long terme.\n",
       "missions": [
         "Secrétariat et soutien de proximité des équipes engagées sur la gestion de crise sanitaire COVID"
       ],
@@ -176,15 +196,26 @@
           ]
         },
         {
-          "titre": "Empathie raisonnée",
+          "titre": "Intervention dans un contexte de crise",
           "liste": [
-            "Capacité de travailler en équipe",
-            "Capacité de travailler dans une organisation de crise hiérarchisée",
+            "Réactivité et capacité d'initiative",
+            "Inventivité pour trouver des solutions dans l'urgence",
+            "Capacité de travailler en équipe dans une organisation hiérarchisée",
             "Capacité à être autonome sur ses fonctions",
-            "Capacité à rendre compte",
             "Discrétion",
-            "Réactivé",
             "Disponibilité"
+          ]
+        },
+        {
+          "titre": "Compétences métier",
+          "liste": [
+            "Etre à l'écoute de son environnement",
+            "Etre solidaire",
+            "Maitriser les outils bureautiques (Outlook, Word, Powerpoint)",
+            "Savoir mobiliser les services utiles pour répondre aux besoins (fournitures, materiel informatique, soutien de proximité...) de l'organisation\"\"Etre à l'écoute de son environnement",
+            "Etre solidaire",
+            "Maitriser les outils bureautiques (Outlook, Word, Powerpoint)",
+            "Savoir mobiliser les services utiles pour répondre aux besoins (fournitures, materiel informatique, soutien de proximité...) de l'organisation"
           ]
         },
         {
@@ -212,7 +243,7 @@
           ]
         }
       ],
-      "formation": "Le ministère met en place une procédure d'accueil des nouveaux arrivants.\nDes profils opérationnels et expérimentés sont attendus.\nChaque reponsable de pôle de la direction de crise sanitaire explicitera les attendus du poste et accomapagnera le nouvel arrivant sur ses fonctions.\nLe ministère met en place un appui en coaching et en management pour tous les encadrants de crises.\nDes mesures de soutiens humains sont mis en oeuvre (reconnaissance, temps de repos, sommeil...)\n",
+      "formation": "Les nouveaux arrivants sont accueillis individuellement par le service de soutien de proximité de la structure dont ils dépendent. \nUn circuit d'accueil et une présentation de l'organisation de crise leur sont proposés à leur arrivée.\nLa présentation du poste et des missions est assurée par le responsable de la structure puis les agents sont en général binomés avec un agent plus ancien à même de repondre à leurs interrogations.\nDes mesures de soutien humain renforcées adaptées au contexte de gestion de crise (cohésion d'équipe et solidarité entre agents renforcées, suivi médical et psychologique si besoin, amenagement de temps de repos...)  sont mis en oeuvre.\nLe ministère met en place en outre un appui en coaching et en management pour tous les encadrants de crises.\n",
       "prerequis": [
         {
           "titre": "Disponibilité",
@@ -230,6 +261,7 @@
         }
       ],
       "conditions": {
+        "equipement_necessaire": "Le ministère met à disposition des moyens matériels notamment informatiques. En fonction de l'organisation, les agents bénéficient de bureaux ou de site en open space pour les travaux en équipe. Des mesures de télétravail peuvent être envisagées selon les fonctions",
         "contrat": "Mise à disposition",
         "duree": "3 à 6 mois",
         "localisation": "Sur site à 14, avenue Duquesne, Paris 7ème"
@@ -242,7 +274,7 @@
       "id": "cellule-de-crise-logisticiens",
       "petitLogo": "logo-sante-card.png",
       "grandLogo": "logo-sante-fullscreen.png",
-      "contexte": "Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. \nLe ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. \nA ce titre, le ministère a engagé un pilotage fin de ressources humaines dans un fonctionnement 7 jours sur 7, 24 h sur 24h. \nEn ce sens, le ministère fait appel à la solidarité interministérielle pour venir renforcer le dispositif sur des métiers en tension au regard du flux d'entrée et de sorties des agents participants aux différentes cellules de crises. \nL'objectif est de conforter l'effort national en cours dans la lutte contre le développement de la maladie et de déployer l'ensemble du dispositif vaccinal.\n",
+      "contexte": "Le ministère de la santé et des solidarités est mobilisé depuis plus d'un an dans la gestion d'une crise sanitaire sans précédent. \nPour faire face à l'épidémie de Covid 19, il s'est doté de structures dédiées (cabinet COVID, task Force vaccination, direction de communication de crise, centre de crise sanitaire...) dont la plupart fonctionnent grâce à des agents mis à disposition en interne (MSS + IGAS). Certains de ces agents ont besoin de relève après plusieurs mois de mobilisation et l'organisation est confrontée à des besoins qu'elle ne parvient pas à honorer en interne. Ces besoins concernent le coeur de gestion de crise comme des fonctions support tout aussi essentielles pour permettre au ministère d'assurer la continuité de son action dans un contexte de mobilisation soutenue sur le long terme.\n",
       "missions": [
         "Profils Experts",
         "Pilotage et gestion de l'approvisionnement de produits de santé, equipements de protection individuelles, produits sensibles...",
@@ -257,6 +289,26 @@
           ]
         },
         {
+          "titre": "Intervention dans un contexte de crise",
+          "liste": [
+            "Réactivité et capacité d'initiative",
+            "Inventivité pour trouver des solutions dans l'urgence",
+            "Capacité de travailler en équipe dans une organisation hiérarchisée",
+            "Capacité à être autonome sur ses fonctions",
+            "Discrétion",
+            "Disponibilité"
+          ]
+        },
+        {
+          "titre": "Compétences métier",
+          "liste": [
+            "Evaluer les stocks et prévenir les risques de penuries",
+            "Répartir des stocks en tenant compte des priorités stratégiques pré-établies",
+            "Coordonner des moyens de transit",
+            "Adaptabilité"
+          ]
+        },
+        {
           "titre": "Communication",
           "liste": [
             "Bon niveau rédactionnel",
@@ -272,6 +324,7 @@
           ]
         }
       ],
+      "formation": "Les nouveaux arrivants sont accueillis individuellement par le service de soutien de proximité de la structure dont ils dépendent. Un circuit d'accueil et une présentation de l'organisation de crise leur sont proposés à leur arrivée. La présentation du poste et des missions est assurée par le responsable de la structure puis les agents sont en général binomés avec un agent plus ancien à même de repondre à leurs interrogations. Des mesures de soutien humain renforcées adaptées au contexte de gestion de crise (cohésion d'équipe et solidarité entre agents renforcées, suivi médical et psychologique si besoin, amenagement de temps de repos...)  sont mis en oeuvre. Le ministère met en place en outre un appui en coaching et en management pour tous les encadrants de crises.",
       "prerequis": [
         {
           "titre": "Disponibilité",
@@ -289,6 +342,7 @@
         }
       ],
       "conditions": {
+        "equipement_ncessaire": "Le ministère met à disposition des moyens matériels notamment informatiques. En fonction de l'organisation, les agents bénéficient de bureaux ou de site en open space pour les travaux en équipe. Des mesures de télétravail peuvent être envisagées selon les fonctions",
         "contrat": "Mise à disposition",
         "duree": "3 à 6 mois",
         "localisation": "Sur site à 14, avenue Duquesne, Paris 7ème"
@@ -301,7 +355,7 @@
       "id": "cellule-gestionnaire-rh",
       "petitLogo": "logo-sante-card.png",
       "grandLogo": "logo-sante-fullscreen.png",
-      "contexte": "Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. \nLe ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. \nA ce titre, le ministère a engagé un pilotage fin de ressources humaines dans un fonctionnement 7 jours sur 7, 24 h sur 24h. \nEn ce sens, le ministère fait appel à la solidarité interministérielle pour venir renforcer le dispositif sur des métiers en tension au regard du flux d'entrée et de sorties des agents participants aux différentes cellules de crises. \nL'objectif est de conforter l'effort national en cours dans la lutte contre le développement de la maladie et de déployer l'ensemble du dispositif vaccinal.\n",
+      "contexte": "Le ministère de la santé et des solidarités est mobilisé depuis plus d'un an dans la gestion d'une crise sanitaire sans précédent. \nPour faire face à l'épidémie de Covid 19, il s'est doté de structures dédiées (cabinet COVID, task Force vaccination, direction de communication de crise, centre de crise sanitaire...) dont la plupart fonctionnent grâce à des agents mis à disposition en interne (MSS + IGAS). Certains de ces agents ont besoin de relève après plusieurs mois de mobilisation et l'organisation est confrontée à des besoins qu'elle ne parvient pas à honorer en interne. Ces besoins concernent le coeur de gestion de crise comme des fonctions support tout aussi essentielles pour permettre au ministère d'assurer la continuité de son action dans un contexte de mobilisation soutenue sur le long terme.\n",
       "missions": [
         "Gestionnaire RH de proximité (prise en charge financière, accompagnement des agents (accueil, information…)",
         "CET",
@@ -316,6 +370,28 @@
           ]
         },
         {
+          "titre": "Intervention dans un contexte de crise",
+          "liste": [
+            "Réactivité et capacité d'initiative",
+            "Inventivité pour trouver des solutions dans l'urgence",
+            "Capacité de travailler en équipe dans une organisation hiérarchisée",
+            "Capacité à être autonome sur ses fonctions",
+            "Discrétion",
+            "Disponibilité"
+          ]
+        },
+        {
+          "titre": "Compétences métier",
+          "liste": [
+            "Connaissance des statuts et des procédés de recrutement en vigueur dans la fonction publique",
+            "Bon relationnel",
+            "Capacité d'organisation",
+            "Etre à l'écoute de son environnement",
+            "Etre solidaire",
+            "Maitriser les outils bureautiques (Outlook, Word, Excel)"
+          ]
+        },
+        {
           "titre": "Communication",
           "liste": [
             "Bon relationnel attendu",
@@ -330,6 +406,7 @@
           ]
         }
       ],
+      "formation": "Les nouveaux arrivants sont accueillis individuellement par le service de soutien de proximité de la structure dont ils dépendent. Un circuit d'accueil et une présentation de l'organisation de crise leur sont proposés à leur arrivée. La présentation du poste et des missions est assurée par le responsable de la structure puis les agents sont en général binomés avec un agent plus ancien à même de repondre à leurs interrogations. Des mesures de soutien humain renforcées adaptées au contexte de gestion de crise (cohésion d'équipe et solidarité entre agents renforcées, suivi médical et psychologique si besoin, amenagement de temps de repos...)  sont mis en oeuvre. Le ministère met en place en outre un appui en coaching et en management pour tous les encadrants de crises.",
       "prerequis": [
         {
           "titre": "Disponibilité",
@@ -347,6 +424,7 @@
         }
       ],
       "conditions": {
+        "equipement_necessaire": "Le ministère met à disposition des moyens matériels notamment informatiques. En fonction de l'organisation, les agents bénéficient de bureaux ou de site en open space pour les travaux en équipe. Des mesures de télétravail peuvent être envisagées selon les fonctions",
         "contrat": "Mise à disposition",
         "duree": "3 à 6 mois",
         "localisation": "Sur site à 14, avenue Duquesne, Paris 7ème"
@@ -359,7 +437,7 @@
       "id": "cellule-gestionnaire-logistique",
       "petitLogo": "logo-sante-card.png",
       "grandLogo": "logo-sante-fullscreen.png",
-      "contexte": "Le ministère de la santé et des solidarités est en première dans le pilotage et la gestion d'une crise sanitaire sans précédent liée à la Covid 19. \nLe ministère a mis en place une direction de crise sanitaire et une organisation de crises comprenant les directions ministérielles en première ligne. \nA ce titre, le ministère a engagé un pilotage fin de ressources humaines dans un fonctionnement 7 jours sur 7, 24 h sur 24h. \nEn ce sens, le ministère fait appel à la solidarité interministérielle pour venir renforcer le dispositif sur des métiers en tension au regard du flux d'entrée et de sorties des agents participants aux différentes cellules de crises. \nL'objectif est de conforter l'effort national en cours dans la lutte contre le développement de la maladie et de déployer l'ensemble du dispositif vaccinal.\n",
+      "contexte": "Le ministère de la santé et des solidarités est mobilisé depuis plus d'un an dans la gestion d'une crise sanitaire sans précédent. \nPour faire face à l'épidémie de Covid 19, il s'est doté de structures dédiées (cabinet COVID, task Force vaccination, direction de communication de crise, centre de crise sanitaire...) dont la plupart fonctionnent grâce à des agents mis à disposition en interne (MSS + IGAS). Certains de ces agents ont besoin de relève après plusieurs mois de mobilisation et l'organisation est confrontée à des besoins qu'elle ne parvient pas à honorer en interne. Ces besoins concernent le coeur de gestion de crise comme des fonctions support tout aussi essentielles pour permettre au ministère d'assurer la continuité de son action dans un contexte de mobilisation soutenue sur le long terme.\n",
       "missions": [
         "Gestionnaire logistique en chrage de l'accueil et l'installation des nouveaux agents notamment dans le cadre de la crise sanitaire",
         "Mobilisation et prestations informatiques, bureautiques, téléphoniques et pour l'aménagement des bureaux",
@@ -374,6 +452,26 @@
           ]
         },
         {
+          "titre": "Intervention dans un contexte de crise",
+          "liste": [
+            "Réactivité et capacité d'initiative",
+            "Inventivité pour trouver des solutions dans l'urgence",
+            "Capacité de travailler en équipe dans une organisation hiérarchisée",
+            "Capacité à être autonome sur ses fonctions",
+            "Discrétion",
+            "Disponibilité"
+          ]
+        },
+        {
+          "titre": "Compétences métier",
+          "liste": [
+            "Etre accueillant et serviable",
+            "Etre à l'écoute de son environnement",
+            "Etre solidaire",
+            "Savoir mobiliser les services utiles pour répondre aux besoins (installation de materiel informatique, dépannage...) des agents"
+          ]
+        },
+        {
           "titre": "Communication",
           "liste": [
             "Bon relationnel attendu",
@@ -388,6 +486,7 @@
           ]
         }
       ],
+      "formation": "Les nouveaux arrivants sont accueillis individuellement par le service de soutien de proximité de la structure dont ils dépendent. Un circuit d'accueil et une présentation de l'organisation de crise leur sont proposés à leur arrivée. La présentation du poste et des missions est assurée par le responsable de la structure puis les agents sont en général binomés avec un agent plus ancien à même de repondre à leurs interrogations. Des mesures de soutien humain renforcées adaptées au contexte de gestion de crise (cohésion d'équipe et solidarité entre agents renforcées, suivi médical et psychologique si besoin, amenagement de temps de repos...)  sont mis en oeuvre. Le ministère met en place en outre un appui en coaching et en management pour tous les encadrants de crises.",
       "prerequis": [
         {
           "titre": "Disponibilité",
@@ -405,6 +504,7 @@
         }
       ],
       "conditions": {
+        "equipement_necessaire": "Le ministère met à disposition des moyens matériels notamment informatiques. En fonction de l'organisation, les agents bénéficient de bureaux ou de site en open space pour les travaux en équipe. Des mesures de télétravail peuvent être envisagées selon les fonctions",
         "contrat": "Mise à disposition",
         "duree": "3 à 6 mois",
         "localisation": "Sur site à 14, avenue Duquesne, Paris 7ème"
