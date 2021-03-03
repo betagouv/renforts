@@ -87,15 +87,11 @@
               supérieur hiérarchique ?</a>)
           </div>
           <div id="postuler" class="rf-mb-5w">
-            <%- include('partials/apply') -%>
-          </div>
-          <!--div id="postuler" class="rf-mb-5w">
             <div id="apply-banner" class="rf-container rf-mt-4w">
               <div class="rf-grid-row">
                 <div class="rf-col">
                   <button id="apply-button" title="Postuler" class="rf-btn">
-                    <a title="Postuler" href="<%= makeMailto(offre.emailContact, 'Bonjour !') %>" target="_blank"
-                      rel="noopener noreferrer">
+                    <a title="Postuler" href="<%= applyLink %>" target="_blank" rel="noopener noreferrer">
                       Postuler
                     </a>
                   </button>
@@ -104,7 +100,7 @@
               </div>
 
             </div>
-          </div-->
+          </div>
           <div class="rf-callout">
             <div class="rf-callout__text">
               <div class="rf-container">
