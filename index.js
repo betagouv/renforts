@@ -1,7 +1,9 @@
 const express = require("express")
 const path = require("path")
+const fs = require("fs")
 
 require("dotenv").config()
+const content = require('./data/missions.json');
 
 const { contactEmail, contactCNAVEmail, contactCPAMEmail, makeMailto } = require("./utils/mail")
 
@@ -81,6 +83,47 @@ Bonne journée,
     applyLink,
     makeMailto,
   })
+})
+
+app.get("/missions/:id", (req, res) => {
+  const missionTitle = "Missions santé"
+  const subject = `Je postule à la mission ${missionTitle}`
+  const body = `Bonjour,
+
+Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire plus ?
+
+[Des questions ? Vous voulez vous présenter ? Ecrivez ce que vous voulez !]
+
+Bonne journée,
+`
+  let offre = null;
+
+  content.offres.forEach(function (_offre) {
+    if (_offre.id == req.params.id) {
+      offre = _offre;
+
+    }
+
+  });
+
+  const applyLink = process.env.APPLY_URL_SANTE
+    ? process.env.APPLY_URL_SANTE
+    : makeMailto(subject, body)
+
+
+
+  res.render("mission-sante", {
+    withApplyButton: true,
+    missionTitle,
+    applyLink,
+    makeMailto,
+    offre
+  })
+
+
+
+
+
 })
 
 app.get("/mentions-legales", (req, res) => {
