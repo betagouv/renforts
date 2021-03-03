@@ -1,5 +1,5 @@
 const contactEmail =
-  process.env.contactEmail || "candidatureappelsortantassures@cnav.fr" // contact@volontaires.fonction-publique.gouv.fr"
+  process.env.contactEmail || "contact@volontaires.fonction-publique.gouv.fr"
 
 exports.contactEmail = contactEmail
 
