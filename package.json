@@ -3,6 +3,10 @@
   "version": "1.1.0",
   "description": "Mise à disposition d'agents pour venir en renfort d'une administration qui a des besoins accrus en cas de crise.",
   "main": "index.js",
+  "engines": {
+    "node": "10",
+    "npm": "3"
+  },
   "scripts": {
     "checkHTML": "site-validator --verbose --url",
     "checkHTMLLocal": "site-validator --verbose --local --url http://localhost:8080",
