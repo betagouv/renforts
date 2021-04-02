@@ -97,17 +97,23 @@ Je suis intéressé.e par la mission de ${missionTitle}. Pourriez-vous m'en dire
 Bonne journée,
 `
   let offre = null;
+  let url = null;
 
   content.offres.forEach(function (_offre) {
     if (_offre.id == req.params.id) {
       offre = _offre;
+      if (_offre.categorie === 'sante') {
+        url = process.env.APPLY_URL_SANTE;
+      } else if (_offre.categorie === 'ars') {
+        url = process.env.APPLY_URL_ARS;
+      }
 
     }
 
   });
 
-  const applyLink = process.env.APPLY_URL_SANTE
-    ? process.env.APPLY_URL_SANTE
+  const applyLink = url
+    ? url
     : makeMailto(subject, body)
 
 
@@ -125,6 +131,10 @@ Bonne journée,
 
 
 })
+
+app.get("/autres-missions", (req, res) => {
+  res.render("autres-missions", { contactEmail, makeMailto })
+});
 
 app.get("/mentions-legales", (req, res) => {
   res.render("legalNotice", {
