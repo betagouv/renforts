@@ -7,14 +7,14 @@
 <footer class="rf-footer" id="footer">
   <div class="rf-container">
     <div class="rf-footer__body">
-      <div class="rf-footer__brand">
-        <a class="rf-logo" href="/" title="Direction interministérielle du numérique">
-          <span class="rf-logo__title">
+      <div class="rf-footer__brand rf-enlarge-link">
+        <a href="/" title="Retour à l’accueil">
+          <p class="rf-logo">
             Ministère<br>
             de la transformation<br>
             et de la fonction<br>
             publiques
-          </span>
+          </p>
         </a>
       </div>
       <div class="rf-footer__content">
@@ -25,42 +25,84 @@
           Le code source est ouvert et les contributions sont bienvenues.
           <a title="Voir le code source" href="<%= appRepo %>" target="_blank" rel="noopener">Voir le code source</a>
         </p>
-        <ul class="rf-footer__content-links">
-          <li>
-            <a title="Contactez-nous" href="<%= makeMailto(contactEmail, 'Bonjour !') %>" target="_blank"
-              rel="noopener noreferrer">
+        <ul class="rf-footer__content-list">
+          <li class="rf-footer__content-item">
+            <a class="rf-footer__content-link" title="Contactez-nous"
+              href="<%= makeMailto(contactEmail, 'Bonjour !') %>" target="_blank" rel="noopener noreferrer">
               Contactez-nous
             </a>
           </li>
-          <li>
-            <a href="https://www.fonction-publique.gouv.fr/">fonction-publique.gouv.fr</a>
+          <li class="rf-footer__content-item">
+            <a class="rf-footer__content-link"
+              href="https://www.fonction-publique.gouv.fr/">fonction-publique.gouv.fr</a>
           </li>
-          <li>
-            <a href="https://www.numerique.gouv.fr/">numerique.gouv.fr</a>
+          <li class="rf-footer__content-item">
+            <a class="rf-footer__content-link" href="https://www.numerique.gouv.fr/">numerique.gouv.fr</a>
           </li>
-          <li>
-            <a href="https://beta.gouv.fr/">beta.gouv.fr</a>
+          <li class="rf-footer__content-item">
+            <a class="rf-footer__content-link" href="https://beta.gouv.fr/">beta.gouv.fr</a>
           </li>
-          <li>
-            <a href="https://www.gouvernement.fr/">gouvernement.fr</a>
+          <li class="rf-footer__content-item">
+            <a class="rf-footer__content-link" href="https://www.gouvernement.fr/">gouvernement.fr</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="rf-footer__bottom">
       <ul class="rf-footer__bottom-list">
-        <li>
-          <a href="/mentions-legales#accessibilite">Accessibilité: non conforme</a>
+        <li class="rf-footer__bottom-item">
+          <a class="rf-footer__bottom-link" href="/mentions-legales#accessibilite">Accessibilité: non conforme</a>
         </li>
-        <li>
-          <a href="/mentions-legales">Mentions légales</a>
+        <li class="rf-footer__bottom-item">
+          <a class="rf-footer__bottom-link" href="/mentions-legales">Mentions légales</a>
+        </li>
+        <li class="rf-footer__bottom-item">
+          <button class="rf-footer__bottom-link rf-fi-sun-fill-line rf-link--icon-left" aria-controls="rf-theme-modal"
+            data-rf-opened="false">Paramètres d'affichage</button>
         </li>
       </ul>
       <div class="rf-footer__bottom-copy">
-        © République Française 2020
+        <p>
+          © République Française 2020
+        </p>
       </div>
     </div>
-  </div>
+    <dialog id="rf-theme-modal" class="rf-modal" role="dialog" aria-labelledby="rf-theme-modal-title">
+      <div class="rf-container--fluid rf-container-md">
+        <div class="rf-grid-row rf-grid-row--center">
+          <div class="rf-col-12 rf-col-md-6 rf-col-lg-4">
+            <div class="rf-modal__body">
+              <div class="rf-modal__header">
+                <button class="rf-link--close rf-link" aria-controls="rf-theme-modal">Fermer</button>
+              </div>
+              <div class="rf-modal__content">
+                <h1 id="rf-theme-modal-title" class="rf-modal__title">
+                  Paramètres d’affichage
+                </h1>
+                <div id="rf-switch-theme" class="rf-form-group rf-switch-theme">
+                  <fieldset class="rf-fieldset">
+                    <legend class="rf-fieldset__legend">Choisissez un thème pour personnaliser l’apparence du site.
+                    </legend>
+                    <div class="rf-fieldset__content">
+                      <div class="rf-radio-group rf-radio-rich">
+                        <input type="radio" id="rf-radios-theme-light" name="rf-radios-theme" value="light">
+                        <label class="rf-label" for="rf-radios-theme-light">Thème clair
+                        </label>
+                      </div>
+                      <div class="rf-radio-group rf-radio-rich">
+                        <input type="radio" id="rf-radios-theme-dark" name="rf-radios-theme" value="dark">
+                        <label class="rf-label" for="rf-radios-theme-dark">Thème sombre
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
 </footer>
 
 </body>
