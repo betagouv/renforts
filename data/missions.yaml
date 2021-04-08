@@ -65,7 +65,7 @@ offres:
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
     emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-la-cellule-de-crise-du-ministere-de-la-sante
   - titre: Communicants (profil attachée de presse)
     id: cellule-de-crise-communicants
     petitLogo: logo-sante-card.png
@@ -135,7 +135,7 @@ offres:
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
     emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-la-cellule-de-crise-du-ministere-de-la-sante
   - titre: Secretariat
     id: cellule-de-crise-secretariat
     petitLogo: logo-sante-card.png
@@ -202,7 +202,7 @@ offres:
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
     emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-la-cellule-de-crise-du-ministere-de-la-sante
   - titre: Logisticiens, Approvisionnements et gestion de stocks - Transports et transits
     id: cellule-de-crise-logisticiens
     petitLogo: logo-sante-card.png
@@ -263,7 +263,7 @@ offres:
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
     emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-la-cellule-de-crise-du-ministere-de-la-sante
   - titre: Gestionnaire de ressources humaines
     id: cellule-gestionnaire-rh
     petitLogo: logo-sante-card.png
@@ -325,7 +325,7 @@ offres:
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
     emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer 
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-la-cellule-de-crise-du-ministere-de-la-sante
   - titre: Gestionnaire logistique
     id: cellule-gestionnaire-logistique
     petitLogo: logo-sante-card.png
@@ -385,11 +385,11 @@ offres:
       duree: 3 à 6 mois
       localisation: Sur site à 14, avenue Duquesne, Paris 7ème
     emailContact: cabcovid-rhdecrise@sg.social.gouv.fr  
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-la-cellule-de-crise-du-ministere-de-la-sante
   - titre: Gestionnaire dépistage et vaccination - Renfort COVID
     id: gestionnaire-renfort-covid
-    petitLogo: logo-sante-card.png
-    grandLogo: logo-sante-fullscreen.png
+    petitLogo: logo-arsge-card.png
+    grandLogo: logo-arsge-fullscreen.png
     categorie: ars
     contexte: |
         Dans le cadre de la lutte contre la pandémie, l'ARS GRAND Est a besoin de renforcer les délégations territoriales qui sont en première ligne pour organiser les campagnes de dépistage et de vaccination. 
@@ -427,11 +427,11 @@ offres:
       duree: 3 à 6 mois
       localisation: DT 88 4 avenue du Rose Poirier à EPINAL (88)
     emailContact: ars-grandest-candidatures@ars.sante.fr
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-l-ars-grand-est
   - titre: Gestionnaire de Boite mail générique dans le cadre de la lutte COVID 
     id: gestionnaire-boite-mail-covid
-    petitLogo: logo-sante-card.png
-    grandLogo: logo-sante-fullscreen.png
+    petitLogo: logo-arsge-card.png
+    grandLogo: logo-arsge-fullscreen.png
     categorie: ars
     contexte: |
         L'ARS GRAND EST a mis en place une organisation de gestion des signaux qui doivent être analysés et traités (Contact Tracing) 
@@ -470,11 +470,11 @@ offres:
       duree: 3 à 6 mois
       localisation: Siège Nancy  3 bd Joffre . Siège Strasbourg 14 Rue du maréchal Juin
     emailContact: ars-grandest-candidatures@ars.sante.fr
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-l-ars-grand-est
   - titre: Renfort COVID – Contact tracing – Investigateur 
     id: gestionnaire-renfort-covid-investigateur
-    petitLogo: logo-sante-card.png
-    grandLogo: logo-sante-fullscreen.png
+    petitLogo: logo-arsge-card.png
+    grandLogo: logo-arsge-fullscreen.png
     categorie: ars
     contexte: |
         Dans le cadre de la lutte contre la pandémie, il appartient aux ARS de gérer le Contact tracing de niveau 3 (cluster) 
@@ -517,11 +517,11 @@ offres:
       duree: 3 à 6 mois
       localisation: Siège Nancy  3 bd Joffre, DT 54, 6 rue Notre Dame à Nancy (54)
     emailContact: ars-grandest-candidatures@ars.sante.fr
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-l-ars-grand-est
   - titre: Renfort COVID-Contact tracing 
     id: gestionnaire-renfort-covid-depistage
-    petitLogo: logo-sante-card.png
-    grandLogo: logo-sante-fullscreen.png
+    petitLogo: logo-arsge-card.png
+    grandLogo: logo-arsge-fullscreen.png
     categorie: ars
     contexte: |
         Dans la cadre de la lutte contre la pandémie, l'ARS GRAND Est a besoin de renforcer les délégations territoriales qui sont en première ligne pour organiser les campagnes de dépistage et de vaccination. 
@@ -560,11 +560,11 @@ offres:
       duree: 3 à 6 mois
       localisation: DT 51, 6 rue Dom Pérignon, Chalons (51)
     emailContact: ars-grandest-candidatures@ars.sante.fr
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-l-ars-grand-est
   - titre: Coordonnateur de pôles
     id: coordinateur-de-poles
-    petitLogo: logo-sante-card.png
-    grandLogo: logo-sante-fullscreen.png
+    petitLogo: logo-arsge-card.png
+    grandLogo: logo-arsge-fullscreen.png
     categorie: ars
     contexte: |
         Dans la cadre de la lutte contre la pandémie, l'ARS GRAND Est a besoin de renforcer les délégations territoriales qui sont en première ligne 
@@ -600,4 +600,4 @@ offres:
       duree: 3 à 6 mois
       localisation: DT 52, 82 rue du Commandant Hugueny, Chaumont
     emailContact: ars-grandest-candidatures@ars.sante.fr
-    urlPostuler: https://volontaires.fonction-publique.gouv.fr/postulez-à-changer
+    urlPostuler: https://www.demarches-simplifiees.fr/commencer/postuler-pour-l-ars-grand-est

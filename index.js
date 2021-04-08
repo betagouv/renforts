@@ -102,11 +102,13 @@ Bonne journée,
   content.offres.forEach(function (_offre) {
     if (_offre.id == req.params.id) {
       offre = _offre;
+      url = _offre.urlPostuler;
+      /*
       if (_offre.categorie === 'sante') {
         url = process.env.APPLY_URL_SANTE;
       } else if (_offre.categorie === 'ars') {
         url = process.env.APPLY_URL_ARS;
-      }
+      }*/
 
     }
 
