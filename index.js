@@ -33,8 +33,13 @@ app.use(function (req, res, next) {
 })
 
 app.get("/", (req, res) => {
+  const keys = Object.keys(content.offres)
+  const randIndex = Math.floor(Math.random() * keys.length)
+  const randKey = keys[randIndex]
+  const offre = content.offres[randKey]
+  // console.log(offre.id);
   res.render("landing", {
-    makeMailto,
+    makeMailto, offre
   })
 })
 
