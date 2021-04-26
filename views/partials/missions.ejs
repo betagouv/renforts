@@ -6,98 +6,43 @@
     <div class="rf-grid-row rf-grid-row--gutters">
       <div class="rf-container">
         <div class="rf-grid-row">
-          <div class="rf-col-12 rf-col-md-6 rf-col-lg-4">
-            <div class="rf-card rf-card--no-arrow shadow-lg rounded-lg zoomable  rf-enlarge-link">
+          <% for (let i=0; i < offres.length; i++) { %>
+            <div class="rf-col-12 rf-col-md-6 rf-col-lg-4">
+              <div class="rf-card rf-card--no-arrow shadow-lg rounded-lg zoomable rf-enlarge-link">
+                <div class="rf-card__body missions">
+                  <p class="rf-card__detail">
+                    <%=offres[i].conditions.duree%>
+                  </p>
+                  <p class="rf-card__detail">
+                    <%=offres[i].conditions.localisation%>
+                  </p>
+                  <h4 class="rf-card__lead">
+                    <a href="/missions/<%=offres[i].id%>" class="rf-card__link">
+                      <%=offres[i].titre%>
+                    </a>
+                  </h4>
+                  <p class="rf-card__desc">
+                    <%=offres[i].contexte%> ...
+                  </p>
+                  <div class="text-blue-france" style="display: flex; justify-content: end; align-items: center;">En
+                    savoir plus
 
+                    <svg style="display: inline-block; width: 25px; margin-left: 10px"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
 
-              <div class="rf-card__body missions">
-                <p class="rf-card__detail">Au moins deux jours par semaine</p>
-                <p class="rf-card__detail">Dans la caisse primaire d'assurance maladie de votre département</p>
-                <h4 class="rf-card__lead">
-                  <a href="/mission-cpam" class="rf-card__link">Conseiller contact tracing</a>
-                </h4>
-                <p class="rf-card__desc">Dans le cadre de la stratégie Tester, Alerter, Protéger, l’Assurance maladie
-                  est en charge, depuis le 11 mai dernier, du dispositif de traçage de contact qui doit...</p>
-                <div class="text-blue-france" style="display: flex; justify-content: end; align-items: center;">En
-                  savoir plus
-
-                  <svg style="display: inline-block; width: 25px; margin-left: 10px" xmlns="http://www.w3.org/2000/svg"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
+                  </div>
 
                 </div>
-              </div>
-              <div class="rf-card__img missions ">
-                <img src="/static/images/organisations/logo-cpam-card.png" title="Logo Assurance Maladie">
-              </div>
-            </div>
-          </div>
-          <div class="rf-col-12 rf-col-md-6 rf-col-lg-4">
-            <div class="rf-card rf-card--no-arrow shadow-lg rounded-lg zoomable rf-enlarge-link">
-              <div class="rf-card__body missions">
-                <p class="rf-card__detail">Au moins deux jours par semaine</p>
-                <p class="rf-card__detail">Télétravail</p>
-                <h4 class="rf-card__lead">
-                  <a href="/mission-cnav" class="rf-card__link">Conseiller maintien du lien social</a>
-                </h4>
-                <p class="rf-card__desc">Face à l’épidémie de COVID-19, les pouvoirs publics redoublent d’attention
-                  vers les personnes âgées, d’autant plus fragiles, puisque leurs accompagnements et liens ...</p>
-                <div class="text-blue-france" style="display: flex; justify-content: end; align-items: center;">En
-                  savoir plus
-
-                  <svg style="display: inline-block; width: 25px; margin-left: 10px" xmlns="http://www.w3.org/2000/svg"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-
+                <div class="rf-card__img missions ">
+                  <img src="/static/images/organisations/<%=offres[i].petitLogo%>" title="Logo CNAV">
                 </div>
 
               </div>
-              <div class="rf-card__img missions ">
-                <img src="/static/images/organisations/logo-cnav-card.png" title="Logo CNAV">
-              </div>
-
             </div>
-          </div>
-          <div class="rf-col-12 rf-col-md-6 rf-col-lg-4">
-            <div class="rf-card rf-card--no-arrow shadow-lg rounded-lg zoomable rf-enlarge-link">
-              <div class="rf-card__body missions">
-                <p class="rf-card__detail">
-                  <%=offre.conditions.duree%>
-                </p>
-                <p class="rf-card__detail">
-                  <%=offre.conditions.localisation%>
-                </p>
-                <h4 class="rf-card__lead">
-                  <a href="/missions/<%=offre.id%>" class="rf-card__link">
-                    <%=offre.titre%>
-                  </a>
-                </h4>
-                <p class="rf-card__desc">
-                  <%=offre.contexte%> ...
-                </p>
-                <div class="text-blue-france" style="display: flex; justify-content: end; align-items: center;">En
-                  savoir plus
-
-                  <svg style="display: inline-block; width: 25px; margin-left: 10px" xmlns="http://www.w3.org/2000/svg"
-                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-
-                </div>
-
-              </div>
-              <div class="rf-card__img missions ">
-                <img src="/static/images/organisations/<%=offre.petitLogo%>" title="Logo CNAV">
-              </div>
-
-            </div>
-          </div>
-
+            <% } %>
         </div>
 
 
