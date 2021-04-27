@@ -32,28 +32,14 @@ app.use(function (req, res, next) {
   next()
 })
 
-function getRandomItem(items) {
-  var randomIndex = Math.floor(Math.random() * items.length);
-  var item = items.splice(randomIndex, 1);
-  return item[0];
-}
-
 app.get("/", (req, res) => {
-  /*const keys = Object.keys(content.offres)
+  const keys = Object.keys(content.offres)
   const randIndex = Math.floor(Math.random() * keys.length)
   const randKey = keys[randIndex]
-  const offre = content.offres[randKey]*/
-  let offres = []
-  const offre1 = getRandomItem(content.offres);
-  offres.push(offre1)
-  const offre2 = getRandomItem(content.offres);
-  offres.push(offre2)
-  const offre3 = getRandomItem(content.offres);
-  offres.push(offre3);
-
+  const offre = content.offres[randKey]
   // console.log(offre.id);
   res.render("landing", {
-    makeMailto, offres
+    makeMailto, offre
   })
 })
 
