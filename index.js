@@ -118,10 +118,15 @@ Bonne journée,
   let offre = null;
   let url = null;
 
-  content.offres.forEach(function (_offre) {
+  //content.offres.forEach(function (_offre) {
+  for (let i = 0; i < content.offres.length; i++) {
+
+    _offre = content.offres[i];
+
     if (_offre.id == req.params.id) {
       offre = _offre;
       url = _offre.urlPostuler;
+      break;
       /*
       if (_offre.categorie === 'sante') {
         url = process.env.APPLY_URL_SANTE;
@@ -131,13 +136,15 @@ Bonne journée,
 
     }
 
-  });
+  };
 
   const applyLink = url
     ? url
     : makeMailto(subject, body)
 
-
+  if (offre !== null) {
+    console.log(offre.id);
+  } else { console.log('offre is null') }
 
   res.render("mission-sante", {
     withApplyButton: true,
