@@ -1,9 +1,10 @@
 const express = require("express")
 const path = require("path")
 const fs = require("fs")
-
+let rawdata = fs.readFileSync('./data/missions.json');
+let content = JSON.parse(rawdata);
 require("dotenv").config()
-const content = require('./data/missions.json');
+// const content = require('./data/missions.json');
 
 const { contactEmail, contactCNAVEmail, contactCPAMEmail, makeMailto } = require("./utils/mail")
 
@@ -36,7 +37,7 @@ function getRandomItem(items) {
   var randomIndex = Math.floor(Math.random() * items.length);
   var item = items.splice(randomIndex, 1);
   return item[0];
-}
+};
 
 app.get("/", (req, res) => {
   /*const keys = Object.keys(content.offres)
