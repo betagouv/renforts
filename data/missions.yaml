@@ -605,6 +605,7 @@ offres:
     id: charge-mission-gestion-crise-covid
     petitLogo: logo-arshdf-card.png
     grandLogo: logo-arshdf-fullscreen.png
+    categorie: ars
     contexte: |
         Dans le cadre de la gestion de la crise sanitaire liée au Covid-19, l’ARS des Hauts-de-France est plus que jamais mobilisée dans la stratégie « Tracer, Alerter, Protéger » ainsi que dans la gestion de la campagne vaccinale. 
         Afin de rendre ce suivi le plus efficace possible (réactivité, adaptation des actions aux priorités locales), nous recrutons un(e) chargé(e) de mission dédié à la gestion de crise.
@@ -657,6 +658,7 @@ offres:
     id: charge-mission-gestion-crise-covid-1
     petitLogo: logo-arshdf-card.png
     grandLogo: logo-arshdf-fullscreen.png
+    categorie: ars
     contexte: |
         Dans le cadre de la gestion de la crise sanitaire liée au Covid-19, l’ARS des Hauts-de-France est plus que jamais mobilisée dans la stratégie « Tracer, Alerter, Protéger » ainsi que dans la gestion de la campagne vaccinale. 
         Afin de rendre ce suivi le plus efficace possible (réactivité, adaptation des actions aux priorités locales), nous recrutons un(e) chargé(e) de mission dédié à la gestion de crise.
@@ -709,6 +711,7 @@ offres:
     id: charge-mission-gestion-crise-covid-2
     petitLogo: logo-arshdf-card.png
     grandLogo: logo-arshdf-fullscreen.png
+    categorie: ars
     contexte: |
         Dans le cadre de la gestion de la crise sanitaire liée au Covid-19, l’ARS des Hauts-de-France est plus que jamais mobilisée dans la stratégie « Tracer, Alerter, Protéger » ainsi que dans la gestion de la campagne vaccinale. 
         Afin de rendre ce suivi le plus efficace possible (réactivité, adaptation des actions aux priorités locales), nous recrutons un(e) chargé(e) de mission dédié à la gestion de crise.
@@ -759,6 +762,7 @@ offres:
     id: charge-mission-analyste-suivi-donnees
     petitLogo: logo-arshdf-card.png
     grandLogo: logo-arshdf-fullscreen.png
+    categorie: ars
     contexte: |
         Dans le cadre de la gestion de la crise sanitaire liée au Covid-19, l’ARS des Hauts-de-France est plus que jamais mobilisée dans la stratégie « Tracer, Alerter, Protéger » ainsi que dans la gestion de la campagne vaccinale. 
         Afin de rendre ce suivi le plus efficace possible (réactivité, adaptation des actions aux priorités locales), nous recrutons un(e) chargé(e) de mission dédié à la gestion de crise.
@@ -806,6 +810,7 @@ offres:
     id: charge-mission-analyste-suivi-donnees-1
     petitLogo: logo-arshdf-card.png
     grandLogo: logo-arshdf-fullscreen.png
+    categorie: ars
     contexte: |
         Dans le cadre de la gestion de la crise sanitaire liée au Covid-19, l’ARS des Hauts-de-France est plus que jamais mobilisée dans la stratégie « Tracer, Alerter, Protéger » ainsi que dans la gestion de la campagne vaccinale. 
         Afin de rendre ce suivi le plus efficace possible (réactivité, adaptation des actions aux priorités locales), nous recrutons un(e) chargé(e) de mission dédié à la gestion de crise.

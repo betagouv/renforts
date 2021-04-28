@@ -1,9 +1,10 @@
 const express = require("express")
 const path = require("path")
 const fs = require("fs")
-
+let rawdata = fs.readFileSync('./data/missions.json');
+let content = JSON.parse(rawdata);
 require("dotenv").config()
-const content = require('./data/missions.json');
+// const content = require('./data/missions.json');
 
 const { contactEmail, contactCNAVEmail, contactCPAMEmail, makeMailto } = require("./utils/mail")
 
@@ -32,14 +33,31 @@ app.use(function (req, res, next) {
   next()
 })
 
+function getRandomItem(items) {
+  var randomIndex = Math.floor(Math.random() * items.length);
+  var item = items.splice(randomIndex, 1);
+  return item[0];
+};
+
 app.get("/", (req, res) => {
-  const keys = Object.keys(content.offres)
+  /*const keys = Object.keys(content.offres)
   const randIndex = Math.floor(Math.random() * keys.length)
   const randKey = keys[randIndex]
-  const offre = content.offres[randKey]
+  const offre = content.offres[randKey]*/
+  let offres = []
+  let targetOffres = []
+  const returnedTarget = Object.assign(targetOffres, content.offres);
+
+  const offre1 = getRandomItem(returnedTarget);
+  offres.push(offre1)
+  const offre2 = getRandomItem(returnedTarget);
+  offres.push(offre2)
+  const offre3 = getRandomItem(returnedTarget);
+  offres.push(offre3);
+
   // console.log(offre.id);
   res.render("landing", {
-    makeMailto, offre
+    makeMailto, offres
   })
 })
 
@@ -104,10 +122,15 @@ Bonne journée,
   let offre = null;
   let url = null;
 
-  content.offres.forEach(function (_offre) {
+  //content.offres.forEach(function (_offre) {
+  for (let i = 0; i < content.offres.length; i++) {
+
+    _offre = content.offres[i];
+
     if (_offre.id == req.params.id) {
       offre = _offre;
       url = _offre.urlPostuler;
+      break;
       /*
       if (_offre.categorie === 'sante') {
         url = process.env.APPLY_URL_SANTE;
@@ -117,13 +140,15 @@ Bonne journée,
 
     }
 
-  });
+  };
 
   const applyLink = url
     ? url
     : makeMailto(subject, body)
 
-
+  if (offre !== null) {
+    console.log(offre.id);
+  } else { console.log('offre is null') }
 
   res.render("mission-sante", {
     withApplyButton: true,
