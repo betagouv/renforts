@@ -45,11 +45,14 @@ app.get("/", (req, res) => {
   const randKey = keys[randIndex]
   const offre = content.offres[randKey]*/
   let offres = []
-  const offre1 = getRandomItem(content.offres);
+  let targetOffres = []
+  const returnedTarget = Object.assign(targetOffres, content.offres);
+
+  const offre1 = getRandomItem(returnedTarget);
   offres.push(offre1)
-  const offre2 = getRandomItem(content.offres);
+  const offre2 = getRandomItem(returnedTarget);
   offres.push(offre2)
-  const offre3 = getRandomItem(content.offres);
+  const offre3 = getRandomItem(returnedTarget);
   offres.push(offre3);
 
   // console.log(offre.id);
