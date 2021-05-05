@@ -8,8 +8,10 @@ offres:
         - Temps partiel
         - Sur site
     contexte: |
-        Dans le cadre de la stratégie Tester, Alerter, Protéger, l’Assurance maladie est en charge, depuis le 11 mai dernier, du dispositif de contact tracing qui doit permettre de contacter rapidement les patients diagnostiqués positifs au COVID, de mettre en place toutes les mesures pour les prendre en charge et enfin d'identifier très rapidement toutes les personnes ou situations à risque dans leur entourage (leurs proches et l'ensemble des personnes avec qui elles ont été en contact rapproché).
+        Dans le cadre de la stratégie Tester, Alerter, Protéger, l’Assurance maladie est en charge, depuis le 11 mai dernier, du dispositif de contact tracing qui doit permettre de contacter rapidement les patients diagnostiqués positifs au COVID, de mettre en place toutes les mesures pour les prendre en charge et enfin d'identifier très rapidement toutes les personnes ou situations à risque dans leur entourage (leurs proches et l'ensemble des personnes avec qui elles ont été en contact rapproché).        
+        
         Ce traçage se réalise via l'outil Contact Covid.
+        
         Pour cela, le médecin traitant démarre avec le patient détecté positif le traçage auprès de son entourage familial (niveau 1) puis la plateforme recense les personnes ayant eu des contacts à risque avec le patient (niveau 2). En cas de clusters ou situation complexe, l'Agence Régionale de Santé est saisie (niveau 3).
     missions:
         - Contacter le patient 0 (patient positif) afin de retracer ses « cas contacts à risque », dans les 4h suivant la création de la fiche du patient;
@@ -48,6 +50,7 @@ offres:
     conditions:
       contrat: mise à disposition
       duree: 1 mois renouvelable (engagement préférable sur 2 mois)
+      horaires: Flexibles entre 8h30 et 18h30, min. 2j/semaine
       localisation: dans la caisse primaire d'assurance maladie de votre département
     emailContact: contact-cpam@volontaires.fonction-publique.gouv.fr
     urlPostuler: https://www.demarches-simplifiees.fr/commencer/volontaires-contact-tracing
@@ -150,6 +153,7 @@ d’une connexion internet pour les raisons évoquées ci-dessus, ainsi que pour
     conditions:
       contrat: mise à disposition
       duree: 1 mois renouvelable (engagement préférable sur 2 mois)
+      horaires: Flexibles entre 8h30 et 18h30, min. 2j/semaine
       localisation: dans la caisse primaire d'assurance maladie de votre département
     emailContact: contact-cpam@volontaires.fonction-publique.gouv.fr
     urlPostuler: https://www.demarches-simplifiees.fr/commencer/volontaires-contact-tracing
