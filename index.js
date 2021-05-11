@@ -1,8 +1,12 @@
 const express = require("express")
 const path = require("path")
+
+const yaml = require('js-yaml');
 const fs = require("fs")
-let rawdata = fs.readFileSync('./data/missions.json');
-let content = JSON.parse(rawdata);
+
+const content = yaml.load(fs.readFileSync('./data/missions.yaml', 'utf8'))
+// let rawdata = fs.readFileSync('./data/missions.json');
+// let content = JSON.parse(rawdata);
 require("dotenv").config()
 // const content = require('./data/missions.json');
 
