@@ -166,6 +166,23 @@ Bonne journée,
 
 })
 
+app.get("/autres-missions-1", (req, res) => {
+  var categories = []
+  for (var i = 0; i < content.offres.length; i++) {
+    for (var j = 0; j < content.offres[i].categories.length; j++) {
+      const found = categories.find(element => element === content.offres[i].categories[j])
+
+
+      if (found === undefined) {
+        categories.push(content.offres[i].categories[j])
+      }
+
+    }
+  }
+
+  res.render("autres-missions-1", { contactEmail, makeMailto, categories })
+});
+
 app.get("/autres-missions", (req, res) => {
   res.render("autres-missions", { contactEmail, makeMailto })
 });
