@@ -1,10 +1,12 @@
 const express = require("express")
 const path = require("path")
+
+const yaml = require('js-yaml');
 const fs = require("fs")
-let rawdata = fs.readFileSync('./data/missions.json');
-let content = JSON.parse(rawdata);
+
+const content = yaml.load(fs.readFileSync('./data/missions.yaml', 'utf8'))
+
 require("dotenv").config()
-// const content = require('./data/missions.json');
 
 const { contactEmail, contactCNAVEmail, contactCPAMEmail, makeMailto } = require("./utils/mail")
 
