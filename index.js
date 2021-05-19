@@ -168,19 +168,44 @@ Bonne journée,
 
 app.get("/autres-missions-1", (req, res) => {
   var categories = []
-  for (var i = 0; i < content.offres.length; i++) {
-    for (var j = 0; j < content.offres[i].categories.length; j++) {
-      const found = categories.find(element => element === content.offres[i].categories[j])
+  var offres = {}
+
+  for (let i = 0; i < content.offres.length; i++) {
+    if (content.offres[i].categories === null || content.offres[i].categories === undefined) {
+      console.log(content.offres[i].titre);
+    }
+    for (let j = 0; j < content.offres[i].categories.length; j++) {
+      const found = categories.find(element => element === content.offres[i].categories[j].trim())
 
 
       if (found === undefined) {
-        categories.push(content.offres[i].categories[j])
+        offres[content.offres[i].categories[j].trim()] = []
       }
+
+
 
     }
   }
 
-  res.render("autres-missions-1", { contactEmail, makeMailto, categories })
+  for (let i = 0; i < content.offres.length; i++) {
+    if (content.offres[i].categorie === 'cpam') { console.log('cpam'); }
+    if (content.offres[i].categorie === 'cnav') { console.log('cnav'); }
+    for (let j = 0; j < content.offres[i].categories.length; j++) {
+      const found = categories.find(element => element === content.offres[i].categories[j].trim())
+
+
+      if (found === undefined) {
+        categories.push(content.offres[i].categories[j].trim())
+      }
+
+      offres[content.offres[i].categories[j].trim()].push(content.offres[i]);
+
+    }
+  }
+
+
+
+  res.render("autres-missions-1", { contactEmail, makeMailto, categories, offres })
 });
 
 app.get("/autres-missions", (req, res) => {
