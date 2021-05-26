@@ -1,0 +1,62 @@
+<%- include('partials/header') -%>
+  <div id="offres-de-mission" class="rf-container rf-mt-4w">
+    <%- include('partials/breadcrumbs', { items: [ { label: 'Accueil' , url: '/' }, { label: 'Toutes les missions' }, ],
+      } ) -%>
+      <div class="rf-px-2w rf-px-md-6w">
+        <% for (let i=0; i < categories.length; i++) { %>
+          <h3>
+            <%=categories[i]%>
+          </h3>
+          <div class="rf-grid-row rf-grid-row--gutters">
+            <div class="rf-container">
+              <div class="rf-grid-row">
+                <% var _offres=offres[categories[i]] ; %>
+                  <% for (let i=0; i < _offres.length; i++) { %>
+                    <div class="rf-col-12 rf-col-md-6 rf-col-lg-4">
+                      <div class="rf-card rf-card--no-arrow shadow-lg rounded-lg zoomable rf-enlarge-link">
+                        <div class="rf-card__body missions">
+                          <p class="rf-card__detail">
+                            <%=_offres[i].conditions.duree%>
+                          </p>
+                          <p class="rf-card__detail">
+                            <%=_offres[i].conditions.localisation%>
+                          </p>
+                          <h4 class="rf-card__lead">
+                            <a href="/missions/<%=_offres[i].id%>" class="rf-card__link">
+                              <%=_offres[i].titre%>
+                            </a>
+                          </h4>
+                          <p class="rf-card__desc">
+                            <%=_offres[i].contexte.slice(0,200)%> ...
+                          </p>
+                          <div class="text-blue-france"
+                            style="display: flex; justify-content: end; align-items: center;">En
+                            savoir plus
+
+                            <svg style="display: inline-block; width: 25px; margin-left: 10px"
+                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+
+                          </div>
+
+                        </div>
+                        <div class="rf-card__img missions ">
+                          <img src="/static/images/organisations/<%=_offres[i].petitLogo%>" title="Logo CNAV">
+                        </div>
+
+                      </div>
+                    </div>
+                    <% } %>
+              </div>
+
+
+            </div>
+          </div>
+
+          <% } %>
+
+      </div>
+  </div>
+  <%- include('partials/footer') -%>
